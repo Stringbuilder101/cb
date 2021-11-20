@@ -63,7 +63,7 @@ Log In for Admin
 ![Screenshot (359)](https://user-images.githubusercontent.com/90509231/142727555-59936e52-f8cd-4db4-b558-984ecc1eb936.png)
 Log In for Instructor(different page)
 ![Screenshot (360)](https://user-images.githubusercontent.com/90509231/142727611-75f66fb6-353f-4128-9315-b5d8e181d97c.png)
-
+(Student log in is on the home page)
 Images used from pixabay.com free to use for non comercial purposes with the lisence.
 
 
