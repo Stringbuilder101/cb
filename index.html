@@ -3,8 +3,8 @@
      Date: 11/19/2021
      Course CS 355
      This is index.html page for my website-->
-
-<title>Homepage</title>
+<html>
+<title>homepage</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -12,7 +12,8 @@
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-   html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif
+ 
+html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif
   }
 .navbar {
   overflow: hidden;
@@ -97,8 +98,9 @@ input[type="submit"] {
   position: relative;
   left: -35px;
   content: "✖";
-}  
+}
 </style>
+  
 <body class="w3-theme-l5">
 <!--W3 schools code and styling used throughout the project-->
 <!-- Navbar -->
@@ -108,7 +110,7 @@ input[type="submit"] {
   <a href="https://codepen.io/polinazclements/full/YzxRevG" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
    <a href="https://codepen.io/polinazclements/full/QWMYjNx" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Admin"><i class="fa fa-globe"></i></a>
   <a href="https://codepen.io/polinazclements/full/rNzPVoQ" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Instructor"><i class="fa fa-user"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Contact Us"><i class="fa fa-envelope"></i></a>
+  
   <div class="w3-dropdown-hover w3-hide-small">
 
   </div>
@@ -138,11 +140,7 @@ input[type="submit"] {
         <h3>
         <center>Log In
         </center>
-        </h3>
-        <div class="container">
-            </div>
-            
-            
+        </h3>         
       <!--Password Validation
        submits GET/POST parameters-->
             
@@ -310,8 +308,7 @@ input[type="submit"] {
              
           </div>
         </div>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+        
       </div>
       
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
@@ -320,8 +317,7 @@ input[type="submit"] {
         <h4>Keep Learning!</h4><br>
         <hr class="w3-clear">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+       
       </div>  
 
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
@@ -332,8 +328,7 @@ input[type="submit"] {
         <p>Have you seen this?</p>
         <img src="https://cdn.pixabay.com/photo/2020/07/05/13/12/pumpkin-5372947_960_720.jpg" style="width:100%" class="w3-margin-bottom">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        <button type="button" class="w3-button w3-theme-d1 w3-margin-bottom"><i class="fa fa-thumbs-up"></i>  Like</button> 
-        <button type="button" class="w3-button w3-theme-d2 w3-margin-bottom"><i class="fa fa-comment"></i>  Comment</button> 
+        
       </div> 
       
     <!-- End Middle Column -->
@@ -394,6 +389,82 @@ input[type="submit"] {
 <footer class="w3-container w3-theme-d5">
   <p>Powered by <a href="https://stringbuilder101.github.io/resume/#lets-keep-in-touch" target="_blank">@Polina</a></p>
 </footer>
+ 
+<script>
+// Accordion
+ var myInput = document.getElementById("psw");
+    var letter = document.getElementById("letter");
+    var capital = document.getElementById("capital");
+    var number = document.getElementById("number");
+    var length = document.getElementById("length");
+    // When the user clicks on the password field, show the message box
+    myInput.onfocus = function() {
+      document.getElementById("message").style.display = "block";
+    }
+    // When the user clicks outside of the password field, hide the message box
+    myInput.onblur = function() {
+      document.getElementById("message").style.display = "none";
+    }
+    // When the user starts to type something inside the password field
+    myInput.onkeyup = function() {
+      // Validate lowercase letters
+      var lowerCaseLetters = /[a-z]/g;
+      if (myInput.value.match(lowerCaseLetters)) {
+        letter.classList.remove("invalid");
+        letter.classList.add("valid");
+      } else {
+        letter.classList.remove("valid");
+        letter.classList.add("invalid");
+      }
+      // Validate capital letters
+      var upperCaseLetters = /[A-Z]/g;
+      if (myInput.value.match(upperCaseLetters)) {
+        capital.classList.remove("invalid");
+        capital.classList.add("valid");
+      } else {
+        capital.classList.remove("valid");
+        capital.classList.add("invalid");
+      }
+      // Validate numbers
+      var numbers = /[0-9]/g;
+      if (myInput.value.match(numbers)) {
+        number.classList.remove("invalid");
+        number.classList.add("valid");
+      } else {
+        number.classList.remove("valid");
+        number.classList.add("invalid");
+      }
+      // Validate length
+      if (myInput.value.length >= 8) {
+        length.classList.remove("invalid");
+        length.classList.add("valid");
+      } else {
+        length.classList.remove("valid");
+        length.classList.add("invalid");
+      }
+    }
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme-d1";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme-d1", "");
+  }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 
 </body>
 </html> 
