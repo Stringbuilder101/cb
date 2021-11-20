@@ -45,6 +45,27 @@ Student's Submission page
 ![Screenshot (346)](https://user-images.githubusercontent.com/90509231/142726816-8fc24477-5c40-41bb-a9af-1aa37fa19f45.png)
 Instructor's view page
 ![Screenshot (348)](https://user-images.githubusercontent.com/90509231/142726882-070b5087-43ea-4726-9e2c-5e516af40224.png)
+Student that is enrolled course page
+![Screenshot (349)](https://user-images.githubusercontent.com/90509231/142726940-7cd1815c-e29b-4f2e-8808-8bf78d586808.png)
+Student's page to request to enroll and search for courses and view if their request was approved.
+![Screenshot (350)](https://user-images.githubusercontent.com/90509231/142727020-c0c68059-7c59-4e3f-8d36-bd0e61dd1f49.png)
+Student's page to submit enrollment request
+![image](https://user-images.githubusercontent.com/90509231/142727083-1b54f9b3-1784-4121-ad7f-00b836a2d06c.png)
+Dashboard with tables for courses, queries, students, and instructors enrolled or available.
+![Screenshot (354)](https://user-images.githubusercontent.com/90509231/142727195-0e8f4f8c-c4b7-4109-9222-9a450c8e2366.png)
+Student's assignment page
+![Screenshot (355)](https://user-images.githubusercontent.com/90509231/142727336-0fa12101-9fb3-4705-b4be-a142c9caf046.png)
+Sign Up page with password validation
+![image](https://user-images.githubusercontent.com/90509231/142727430-ab8cc340-137b-4cec-9340-bad4ca2026db.png)
+Admin view to search by student and instructor's id.
+![Screenshot (357)](https://user-images.githubusercontent.com/90509231/142727489-878c9063-dc08-407b-bb08-bf151fc394bb.png)
+Log In for Admin
+![Screenshot (359)](https://user-images.githubusercontent.com/90509231/142727555-59936e52-f8cd-4db4-b558-984ecc1eb936.png)
+Log In for Instructor(different page)
+![Screenshot (360)](https://user-images.githubusercontent.com/90509231/142727611-75f66fb6-353f-4128-9315-b5d8e181d97c.png)
+
+
+
 
 
 
