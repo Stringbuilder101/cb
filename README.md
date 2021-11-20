@@ -36,4 +36,5 @@
 4. HTML, CSS, JS
 5. .PHP
 6. Mongo DB 
-7. https://github.com/Stringbuilder101/chalkboard/blob/main/README.md https://stringbuilder101.github.io/chalkboard/         
+7. https://github.com/Stringbuilder101/chalkboard/blob/main/README.md https://stringbuilder101.github.io/chalkboard/    
+8. All pages are connected but not accessible from the first page.     
