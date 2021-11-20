@@ -37,4 +37,11 @@
 5. .PHP
 6. Mongo DB 
 7. https://github.com/Stringbuilder101/chalkboard/blob/main/README.md https://stringbuilder101.github.io/chalkboard/    
-8. All pages are connected but not accessible from the first page.     
+8. All pages are connected but not accessible because of the password.
+9. https://codepen.io/polinazclements/pens/public?grid_type=list List of all pages
+10. Home Page
+11.![Screenshot (341)](https://user-images.githubusercontent.com/90509231/142726724-919c4939-8df4-4cf6-9ee2-ba68eb6b1a65.png)
+  
+
+
+
