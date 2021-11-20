@@ -40,8 +40,13 @@
 8. All pages are connected but not accessible because of the password.
 9. https://codepen.io/polinazclements/pens/public?grid_type=list List of all pages
 10. Home Page
-11.![Screenshot (341)](https://user-images.githubusercontent.com/90509231/142726724-919c4939-8df4-4cf6-9ee2-ba68eb6b1a65.png)
-  
+![Screenshot (341)](https://user-images.githubusercontent.com/90509231/142726724-919c4939-8df4-4cf6-9ee2-ba68eb6b1a65.png)
+Student's Submission page
+![Screenshot (346)](https://user-images.githubusercontent.com/90509231/142726816-8fc24477-5c40-41bb-a9af-1aa37fa19f45.png)
+Instructor's view page
+![Screenshot (348)](https://user-images.githubusercontent.com/90509231/142726882-070b5087-43ea-4726-9e2c-5e516af40224.png)
+
+
 
 
 
