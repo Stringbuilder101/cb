@@ -4,6 +4,7 @@ function showSpecial() {
    let special = document.getElementById("special");
    special.style.display = "block";
 }
+
 // Accordion
 function myFunction(id) {
   var x = document.getElementById(id);
