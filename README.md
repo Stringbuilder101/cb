@@ -1,6 +1,6 @@
 # website
 1. https://stringbuilder101.github.io/cb/
-2. Polina Zhukovskaya Clements
+2. Polina Zhukovskaya Clements worked independently
 3. Homepage has three buttons to log in for students, admin, and instructor.(one on the web page and 2 in navigation bar, navigation bar has a button for sign up page)
    https://stringbuilder101.github.io/cb/ Log In validates username in the form of an email and passsword.
    Admin View can only be accessed through the Log In page for admin. It has tree tables to see what courses, students, and instructors are currently enrolled or available. It   
