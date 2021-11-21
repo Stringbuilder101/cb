@@ -1,5 +1,18 @@
-html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif
-  }
+#special {
+  text-align: center;
+}
+#special1 {
+  text-align: center;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Open Sans", sans-serif;
+}
 .navbar {
   overflow: hidden;
 }
@@ -47,7 +60,6 @@ input[type="submit"] {
   padding: 20px;
 }
 
-  
 /* The message box is shown when the user clicks on the password field */
 #message {
   display: none;
