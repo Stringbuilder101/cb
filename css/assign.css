@@ -1,4 +1,7 @@
 
+ul{
+  list-style-type: none;
+}
 html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
@@ -112,7 +115,7 @@ body {
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;"
+  background-size: cover;
   color: black;
  
 }
@@ -236,7 +239,7 @@ input[type=text], input[type=password] {
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: 1px, black;
+  border: 1px black;
   background: #f1f1f1;
 }
 
