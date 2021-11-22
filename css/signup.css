@@ -1,13 +1,15 @@
-#special {
-   display: none;
- /*  border: solid red 1px;*/
-   ...
+.special{
+  text-align : center;
 }
 html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
 
 /* Full-width input fields */
+.special{
+  text-align : center;
+}
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -93,7 +95,7 @@ body {
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;"
+  background-size: cover;
   color: black;
  
 }
@@ -217,7 +219,7 @@ input[type=text], input[type=password] {
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: 1px, black;
+  border: 1px black;
   background: #f1f1f1;
 }
 
@@ -232,7 +234,7 @@ hr {
 }
 
 /* Set a style for all buttons */
-button {
+.converBtn, button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -243,12 +245,12 @@ button {
   opacity: 0.9;
 }
 
-button:hover {
+.convertBtn, button:hover {
   opacity:1;
 }
 
 /* Extra styles for the cancel button */
-.cancelbtn {
+.cancelbtn{
   padding: 14px 20px;
   background-color: #f44336;
 }
@@ -273,10 +275,10 @@ button:hover {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
+  .cancelbtn, .signupbtn, convertBtn {
      width: 100%;
   }
 }
+
 html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif
   }
-
