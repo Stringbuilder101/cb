@@ -1,15 +1,30 @@
-.special{
-  text-align : center;
+li{
+  list-style:none;
+}
+#message {
+   text-align:center;
+ /*  border: solid red 1px;*/
+   
+}
+#message1 {
+   text-align:center;
+ /*  border: solid red 1px;*/
+   
+}
+#special1 {
+   text-align:center;
+ /*  border: solid red 1px;*/
+   
+}
+#special {
+   display: none;
+ /*  border: solid red 1px;*/
 }
 html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif}
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box}
 
 /* Full-width input fields */
-.special{
-  text-align : center;
-}
-
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -161,16 +176,16 @@ body {
 
 /* Column container */
 .row {  
-  display: -ms-flexbox; /* IE10 */
+/*  display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+/*  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 30%; /* IE10 */
+/*  -ms-flex: 30%; /* IE10 */
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
@@ -179,7 +194,7 @@ body {
 
 /* Main column */
 .main {   
-  -ms-flex: 70%; /* IE10 */
+ /* -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
   padding: 20px;
@@ -234,7 +249,7 @@ hr {
 }
 
 /* Set a style for all buttons */
-.converBtn, button {
+button {
   background-color: #04AA6D;
   color: white;
   padding: 14px 20px;
@@ -245,12 +260,12 @@ hr {
   opacity: 0.9;
 }
 
-.convertBtn, button:hover {
+button:hover {
   opacity:1;
 }
 
 /* Extra styles for the cancel button */
-.cancelbtn{
+.cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
 }
@@ -275,10 +290,9 @@ hr {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn, convertBtn {
+  .cancelbtn, .signupbtn {
      width: 100%;
   }
 }
-
 html, body, h1, h2, h3, h4, h5 {font-family: "Open Sans", sans-serif
   }
