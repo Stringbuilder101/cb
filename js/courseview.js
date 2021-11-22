@@ -21,9 +21,4 @@ function openNav() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
-/*let timerId = setTimeout(showSpecial, 3000);-->
 
-<!--function showSpecial() {
-   let special = document.getElementById("special");
-   special.style.display = "block";
-}-->*/
