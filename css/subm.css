@@ -15,6 +15,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
   background-color: RoyalBlue;
 }
 /* Full-width input fields */
+li{
+  list-style:none;
+}
+
 textarea {
   width: 100%;
   height: 150px;
@@ -27,7 +31,7 @@ textarea {
   resize: none;
 }
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 70%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -111,9 +115,8 @@ body {
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;"
+  background-size: cover;
   color: black;
- 
 }
 
 /* Increase the font size of the heading */
@@ -177,16 +180,16 @@ body {
 
 /* Column container */
 .row {  
-  display: -ms-flexbox; /* IE10 */
+  /*display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
+ /* -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 30%; /* IE10 */
+ /* -ms-flex: 30%; /* IE10 */
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
@@ -235,7 +238,7 @@ input[type=text], input[type=password] {
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: 1px, black;
+  border: 1px black;
   background: #f1f1f1;
 }
 
