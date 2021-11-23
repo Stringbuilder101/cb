@@ -113,7 +113,7 @@ body {
   height: 100%; 
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;"
+  background-size: cover;
   color: black;
  
 }
@@ -179,16 +179,13 @@ body {
 
 /* Column container */
 .row {  
-  display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
-  -ms-flex: 30%; /* IE10 */
   flex: 30%;
   background-color: #f1f1f1;
   padding: 20px;
@@ -197,7 +194,6 @@ body {
 
 /* Main column */
 .main {   
-  -ms-flex: 70%; /* IE10 */
   flex: 70%;
   background-color: white;
   padding: 20px;
@@ -237,7 +233,7 @@ input[type=text], input[type=password] {
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
-  border: 1px, black;
+  border: 1px black;
   background: #f1f1f1;
 }
 
