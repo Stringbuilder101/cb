@@ -5,7 +5,8 @@
    https://stringbuilder101.github.io/cb/ Log In validates username in the form of an email and passsword.
    Admin View can only be accessed through the Log In page for admin. It has tree tables to see what courses, students, and instructors are currently enrolled or available. It   
    has    a table for search quieries, and navigation to ga back to the previous menu.
-   https://codepen.io/polinazclements/full/ExvrzYb (live view)
+   https://codepen.io/polinazclements/full/ExvrzYb 
+   (live view)
    User Sign Up page
    https://codepen.io/polinazclements/full/rNzoxaW(live view) the app features form validation and asks for username, password, first and last name, user is assigned a key, and      and email are unique.
    User Log In
