@@ -7,7 +7,7 @@
    has    a table for search quieries, and navigation to ga back to the previous menu.
    https://codepen.io/polinazclements/full/ExvrzYb 
    User Sign Up page
-   https://codepen.io/polinazclements/full/rNzoxaW(live view) the app features form validation and asks for username, password, first and last name, user is assigned a key, and      and email are unique.
+   https://codepen.io/polinazclements/full/rNzoxaW the app features form validation and asks for username, password, first and last name, user is assigned a key, and      and email are unique.
    User Log In
    User can not Log In or access any features without proper account and all three types of users have different buttons for log in in navigation bar and on the homepage the log
    in for a student.
