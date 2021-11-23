@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChalkBoard</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/instrview.css">
 <script src="js/instrviewscript.js"></script>
- 
+    
+    
 <body class="w3-theme-l5">
 
 
@@ -28,9 +31,7 @@
     <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" class="w3-circle" style="height:23px;width:23px" alt="Sign Up">
   </a>
  </div>
-</div>
 
-  
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
   <a href="https://codepen.io/polinazclements/full/QWMYjNx" class="w3-bar-item w3-button w3-padding-large">Admin</a>
@@ -69,7 +70,7 @@
             <p>
 <a href="https://codepen.io/polinazclements/full/oNeVyzM">Grade Assignment</a></p>
           </div>
-          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i></b>Grade</b></button>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i><b>Grade</b></button>
           <div id="Demo3" class="w3-hide w3-container">
             <p><a href="https://codepen.io/polinazclements/full/oNeVyzM">Grade Assignment</a></p>
          <div class="w3-row-padding">
@@ -125,34 +126,33 @@
               <form method="get" enctype="multipart/form-data" action=" https://wp.zybooks.com/form-viewer.php">               
       <input type="text" class="w3-border w3-padding"  id="course" name="course" placeholder="Course: EMT 300" required>
     
-    <br></br>
-    <label for="country" class="w3-opacity" >Major</label><br></br>
-    <select id="country" class="w3-opacity" name="country" class="w3-border w3-padding">
-      <option value="australia"class="w3-border w3-padding" >FIN</option>
+    <br>
+    <label for="country" class="w3-opacity" >Major</label><br>
+    <select id="country" class="w3-opacity" name="country">
+      <option value="australia" class="w3-border w3-padding" >FIN</option>
       <option value="canada" class="w3-border w3-padding">CST</option>
-      <option value="usa" class="w3-opacity" class="w3-border w3-padding">MAT</option>
+      <option value="usa" class="w3-opacity">MAT</option>
     </select>
   
       <p class="w3-opacity">Choose course attributes:</p>
-  <input type="radio" id="html" name="fav_language" value="HTML"   <input type="radio" id="html" name="fav_language" value="HTML" >
+  <input type="radio" id="html" name="fav_language" value="HTML">
 
   <label for="html" class="w3-opacity">Undergradute</label><br>
   <input type="radio" id="css" name="fav_language" value="CSS">
   <label for="css" class="w3-opacity">Graduate</label><br>
   <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-  <label for="javascript" class="w3-opacity">Non Degree</label><br></br>
-   <p class="w3-opacity" class="w3-opacity">Add Instructor</p>
-  <input type="text"  id="course" name="course" class="w3-border w3-padding" placeholder="Instructor: Hemsworth add" required>
+  <label for="javascript" class="w3-opacity">Non Degree</label><br>
+   <p class="w3-opacity">Add Instructor</p>
+  <input type="text"  id="course1" name="course" class="w3-border w3-padding" placeholder="Instructor: Hemsworth add" required>
     
-  <h6 class="w3-opacity"></h6>
-              <input type ="text"placeholder="Instruction: Online Synchronous" id="instruction" name="instruction"class="w3-border w3-padding"></p>
+              <input type ="text" placeholder="Instruction: Online Synchronous" id="instruction" name="instruction" class="w3-border w3-padding">
               
      <p class="w3-opacity">Add Description</p>  
       <div>
             <label for="answer" ></label>
             <div class = "container">
             
-            <textarea id="descr"  class="w3-border w3-padding" name="descr" placeholder="Write your answer here" rows="3" cols="50"></textarea>
+            <textarea id="answer"  class="w3-border w3-padding" name="descr" placeholder="Write your answer here" rows="3" cols="50"></textarea>
             </div>
           </div>
       <p class="w3-opacity">Add Roster</p>
@@ -160,36 +160,32 @@
    
     <ul class="w3-ul w3-card-4 w3-white">
       <li class="w3-padding-16">
-        <img src="/w3images/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="img/blank-profile-picture-973460_960_720.png" alt="avatar" class="w3-left w3-circle w3-margin-right" style="width:35px">
         <span class="w3-xlarge">Mathew Malicdan</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="/w3images/avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="img/blank-profile-picture-973460_960_720.png" alt="avatar" class="w3-left w3-circle w3-margin-right" style="width:35px">
         <span class="w3-xlarge">Liam Zeng</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="/w3images/avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="img/blank-profile-picture-973460_960_720.png" class="w3-left w3-circle w3-margin-right" alt="avatar" style="width:35px">
         <span class="w3-xlarge">Polina Clements</span><br>
       </li>
     </ul>
   </div>
       <p class="w3-opacity">Add Sequence of Lessons</p>
       <div id=liks>
-      <a href="url">lesson 1</a>
-      <a href="url">lesson 2</a>
-      <a href="url">lesson 3</a>
+      <a href="https://www.youtube.com/playlist?list=PLDrInmW6xudtFLsSq0naTFPFqrjVMeLQA">lesson 1</a>
+      <a href="https://www.youtube.com/playlist?list=PLDrInmW6xudtFLsSq0naTFPFqrjVMeLQA">lesson 2</a>
+      <a href="https://www.youtube.com/playlist?list=PLDrInmW6xudtFLsSq0naTFPFqrjVMeLQA">lesson 3</a>
       </div>
-      <br></br>
-      
-      
-      
-              
+      <br>    
     <input type="submit" value="Create" class="w3-button w3-theme" contenteditable="true">
-            </div>
+              </form>
           </div>
         </div>
       </div>
-      
+       </div>      
       <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
         <img src="/w3images/avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
         <span class="w3-right w3-opacity">1 min</span>
@@ -206,50 +202,50 @@
           </div>
         </div> <div class="w3-card w3-round">
         <div class="w3-white">
-          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>NLP</button>
-          <div id="Demo1" class="w3-hide w3-container">
+          <button onclick="myFunction('Demo123')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i>NLP</button>
+          <div id="Demo123" class="w3-hide w3-container">
             <p><div class="w3-container">
     <h5>Students Enrolled</h5>
     <ul class="w3-ul w3-card-4 w3-white">
       <li class="w3-padding-16">
-        <img src="/w3images/avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
-        <span class="w3-xlarge">Mathew Malicdan</span><br>
+        <img src="img/blank-profile-picture-973460_960_720.png" alt="avatar" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Kevin Bacon</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="/w3images/avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="img/blank-profile-picture-973460_960_720.png" alt="avatar" class="w3-left w3-circle w3-margin-right" style="width:35px">
         <span class="w3-xlarge">Liam Zeng</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="/w3images/avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="img/blank-profile-picture-973460_960_720.png" alt="avatar" class="w3-left w3-circle w3-margin-right" style="width:35px">
         <span class="w3-xlarge">Polina Clements</span><br>
       </li>
     </ul>
-  </div></p>
+  </div>
           </div>
           <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i>CS 313</button>
-          <div id="Demo2" class="w3-hide w3-container">
+          <div id="Demo234" class="w3-hide w3-container">
             <p><div class="w3-container">
     <h5>Students Enrolled</h5>
     <ul class="w3-ul w3-card-4 w3-white">
       <li class="w3-padding-16">
-        <img src="/w3images/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
-        <span class="w3-xlarge">Mathew Malicdan</span><br>
+        <img src="img/blank-profile-picture-973460_960_720.png" alt="avatar" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <span class="w3-xlarge">Kevin Bacon</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="/w3images/avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="img/blank-profile-picture-973460_960_720.png" alt="avatar" class="w3-left w3-circle w3-margin-right" style="width:35px">
         <span class="w3-xlarge">Liam Zeng</span><br>
       </li>
       <li class="w3-padding-16">
-        <img src="/w3images/avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+        <img src="img/blank-profile-picture-973460_960_720.png" class="w3-left w3-circle w3-margin-right" alt="avatar" style="width:35px">
         <span class="w3-xlarge">Polina Clements</span><br>
       </li>
     </ul>
-  </div></p>
+  </div>
         
           </div>
         </div>      
       </div>
-        <br></br>
+        <br>
       </div>
      
     
@@ -312,9 +308,7 @@
 </footer>
 <!--<footer class="w3-container w3-theme-d5">-->
   <p> Powered by @Polina</p>
-</footer>
- 
-
 
 </body>
 </html> 
+  
