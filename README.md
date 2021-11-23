@@ -17,7 +17,8 @@
    Instructor log in page https://codepen.io/polinazclements/full/rNzPVoQ
    Users are students and instructors and they redirected to their pages once they are logged in.
    Instructor's page https://codepen.io/polinazclements/full/vYJPrYV Instructor can approve a request to be added to the roster on the right side of the page.
-   Instructor can create a course, add or remove another instructor to a course, and each course consists of a unique number, name, set of instructors, roster, and lessons.        Instructor can see the roster of students by opening a hamburger and switch between rosters in the hamburger. Students do not have a roster.
+   Instructor can create a course, add or remove another instructor to a course, and each course consists of a unique number, name, set of instructors, roster, and lessons. 
+   Instructor can see the roster of students by opening a hamburger and switch between rosters in the hamburger. Students do not have a roster. Inctructor can open the whole        page with rosters. https://codepen.io/polinazclements/full/xxLyyjG
    Course Enrollment is done through this page: https://codepen.io/polinazclements/full/NWvJWqa once the student gets the request approved. Approval of the course is on the     
    right    side of this page and then the student can enroll. Once the enrollment button is clicked the student can get to the page of the course.               
    https://codepen.io/polinazclements/full/NWvJWqa where they can see materials, lessons, and recorded lectures on the left hamburger bar.
