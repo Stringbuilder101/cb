@@ -47,7 +47,10 @@ Student's Submission page
 ![Screenshot (346)](https://user-images.githubusercontent.com/90509231/142726816-8fc24477-5c40-41bb-a9af-1aa37fa19f45.png)
 Instructor's view page
 ![Screenshot (348)](https://user-images.githubusercontent.com/90509231/142726882-070b5087-43ea-4726-9e2c-5e516af40224.png)
-Student that is enrolled course page
+Student that is enrolled course page, Instructor's assignments are on the left of the student view, or videos can be viewed
+at the bottom of student's assignemnts page.
+https://codepen.io/polinazclements/full/YzxRevG
+![Screenshot (452)](https://user-images.githubusercontent.com/90509231/143059764-1350329d-e2e6-40f6-af37-4af6e8d6b7a4.png)
 ![Screenshot (349)](https://user-images.githubusercontent.com/90509231/142726940-7cd1815c-e29b-4f2e-8808-8bf78d586808.png)
 Student's page to request to enroll and search for courses and view if their request was approved.
 ![Screenshot (350)](https://user-images.githubusercontent.com/90509231/142727020-c0c68059-7c59-4e3f-8d36-bd0e61dd1f49.png)
