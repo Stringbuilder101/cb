@@ -70,8 +70,11 @@ Log In for Instructor(different page)
 ![Screenshot (360)](https://user-images.githubusercontent.com/90509231/142727611-75f66fb6-353f-4128-9315-b5d8e181d97c.png)
 (Student log in is on the home page)
 Images used from pixabay.com free to use for non comercial purposes with the lisence.
-
-
+4. Front End - HTML, CSS, JAVAScript. 
+5. Backend - AJAX, PHP
+6. Mongo DB or SQL
+7. https://github.com/Stringbuilder101/chalkboard/blob/main/README.md 
+The differeneces arised from a more closely following project requrents. 
 
 
 
