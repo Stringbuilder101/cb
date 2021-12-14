@@ -34,6 +34,13 @@ Admin view:
 ![image](https://user-images.githubusercontent.com/90509231/146034931-bb6b0182-9f6b-4c22-af06-e092332279a1.png)
 ![image](https://user-images.githubusercontent.com/90509231/146035207-b8f53581-db32-43db-be65-40b0ec2688e7.png)
 
+When a new user signs up
+![image](https://user-images.githubusercontent.com/90509231/146041583-738163dd-ac76-4857-830c-d2beb1baccc1.png)
+Database updates, unique id adds:
+
+
+
+
 
 <img src="blob:chrome-untrusted://media-app/e42a507b-cc7b-43a8-904d-a08bf15118af" alt="Screenshot 2021-12-14 11.04.52 AM.png"/>![image](https://user-images.githubusercontent.com/90509231/146034861-22fa4e8a-4de7-456d-8c1c-c4e8e7afae51.png)
 
