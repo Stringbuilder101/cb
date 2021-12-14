@@ -46,6 +46,7 @@ and it shows in admin view:
 
 The information from the database enrolled  students or instructors available shows in admin view as a percentage:
 ![Screenshot (926)](https://user-images.githubusercontent.com/90509231/146055650-1e6cb630-15af-41b5-b40b-5c7b2386fb2e.png)
+![image](https://user-images.githubusercontent.com/90509231/146055956-9f324072-b4d7-4fb9-ba09-0465c1dd029c.png)
 
 
 <img src="blob:chrome-untrusted://media-app/e42a507b-cc7b-43a8-904d-a08bf15118af" alt="Screenshot 2021-12-14 11.04.52 AM.png"/>![image](https://user-images.githubusercontent.com/90509231/146034861-22fa4e8a-4de7-456d-8c1c-c4e8e7afae51.png)
