@@ -38,6 +38,8 @@ When a new user signs up
 ![image](https://user-images.githubusercontent.com/90509231/146041583-738163dd-ac76-4857-830c-d2beb1baccc1.png)
 Database updates, unique id adds:
 
+![Screenshot (924)](https://user-images.githubusercontent.com/90509231/146042291-8842255e-5d75-4b8e-b292-3cf5e4a8b212.png)
+and it shows in admin view:
 
 
 
