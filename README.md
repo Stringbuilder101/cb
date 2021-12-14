@@ -48,6 +48,10 @@ The information from the database enrolled  students or instructors available sh
 ![Screenshot (926)](https://user-images.githubusercontent.com/90509231/146055650-1e6cb630-15af-41b5-b40b-5c7b2386fb2e.png)
 ![image](https://user-images.githubusercontent.com/90509231/146055956-9f324072-b4d7-4fb9-ba09-0465c1dd029c.png)
 
+Instructrs and students showed in total so additional users from sign up can be seen.
+
+![image](https://user-images.githubusercontent.com/90509231/146056185-1b032c37-c769-44d9-93d4-e75cf5ea9f03.png)
+
 
 <img src="blob:chrome-untrusted://media-app/e42a507b-cc7b-43a8-904d-a08bf15118af" alt="Screenshot 2021-12-14 11.04.52 AM.png"/>![image](https://user-images.githubusercontent.com/90509231/146034861-22fa4e8a-4de7-456d-8c1c-c4e8e7afae51.png)
 
