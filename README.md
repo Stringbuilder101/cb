@@ -1,4 +1,37 @@
 # website
+
+# website
+   One very important aspect is that to run the program the server needs to be connected and the port might be in use for running is better to use port 2020.
+   One additional thing is needed to be downloaded is npm install ejs. User, Instructor, or Admin can log in but can not access each other's pages. Sign Out button implemented      to sign out which takes the user to a homepage. Admin Dashboard shows sample queries of students or instructors for courses and dates, courses, and instructors and students      available. The database is very small only a few instudents or instructors for demonstration. Color lines students or instructors enrolled shows actual percentage for            students, instructors, or courses actually enrolled or available. If not running because of the error : ADDR IN USE please change the port manually
+   ![Screenshot (892)](https://user-images.githubusercontent.com/90509231/145150882-d99d0ff5-66c0-4961-a4ff-dd038fc0c136.png)
+   
+   ![Screenshot (895)](https://user-images.githubusercontent.com/90509231/145152409-aba297f8-eec0-4c79-ad0d-08a0febc6a01.png)
+   Here are the passwords and to sign up and sign in as instructor password and email should end with 1, admin 2, and student do not have to have any digits in their email or      password.
+   http://localhost:2020/admlogin.html
+   ![Screenshot (898)](https://user-images.githubusercontent.com/90509231/145153429-bf198a94-2741-4853-bc3e-b02f2e5759aa.png)
+    Username updates with the administrator who uses the database.
+    ![Screenshot (900)](https://user-images.githubusercontent.com/90509231/145154096-11987f41-0edd-44c5-b120-7405a2fa7a51.png)
+    Instructors, Students and Search queries.
+    Instructors, students, and admin can log in to the other person account because they have a requrement when signing up to have password end with 2 for admin and 1 for
+    instructor.
+    Incorrect credentials just bring the user back to the index page. No special message or any suggestions.
+   Database was created for deliverable 3 and called myapp. It has the following tables:
+   ![Screenshot (749)](https://user-images.githubusercontent.com/90509231/144548064-dc90d470-86c6-4b51-bae6-196f660ba4c8.png)
+   To run the app the live server was created and started with nodemon (to install nodemon is npm i 
+   ![Screenshot (745)](https://user-images.githubusercontent.com/90509231/144548199-408b0e37-af72-43cd-bb26-4fdc986f0aba.png)
+   To create json file it is needed to do npm init, and the entrypoint is app.js. If the port the port for the server can be changed. 
+   ![Screenshot (750)](https://user-images.githubusercontent.com/90509231/144548688-42e8b6ec-eb06-4c50-9b07-ef543c647183.png)
+   These are tables from the myapp database that are used for queries.
+   ![Screenshot (751)](https://user-images.githubusercontent.com/90509231/144548865-edd1818a-cf3f-4d00-81f8-72bdfb86cc7c.png)\
+   ![Screenshot (752)](https://user-images.githubusercontent.com/90509231/144549010-a35f74a9-ee6c-4696-80ad-228c024b6dea.png)
+   ![Screenshot (753)](https://user-images.githubusercontent.com/90509231/144549137-03910132-2241-43e0-a392-08e183ecc956.png)
+   For database mysql is used so npm install --save mysql express needed on git bash. To start the server on gitbash npm istall -g nodemon.
+   To run the routes the rout can be added:
+   ![Screenshot (755)](https://user-images.githubusercontent.com/90509231/144550066-56028c99-26b2-4d58-8240-caed5a4f78eb.png)
+   ![Screenshot (756)](https://user-images.githubusercontent.com/90509231/144550098-3957f907-02b6-4ca8-b3e2-96b3c2c43374.png)
+
+  
+
 1. https://stringbuilder101.github.io/cb/
 2. Polina Zhukovskaya Clements worked independently
 3. Homepage has three buttons to log in for students, admin, and instructor.(one on the web page and 2 in navigation bar, navigation bar has a button for sign up page)
@@ -75,6 +108,9 @@ Images used from pixabay.com free to use for non comercial purposes with the lis
 6. Mongo DB or SQL
 7. https://github.com/Stringbuilder101/chalkboard/blob/main/README.md 
 The differeneces arised from a more closely following project requrents. 
+
+
+
 
 
 

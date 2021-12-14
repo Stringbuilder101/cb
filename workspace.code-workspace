@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "..\\cb-main\\img"
+    },
+    {
+      "path": "..\\cb-main\\css"
+    },
+    {
+      "path": "..\\cb-main\\js"
+    }
+  ],
+  "settings": {}
+}

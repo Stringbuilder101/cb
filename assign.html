@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChalkBoard</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-blue-grey.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/assign.css" />
+    <script src="js/assign.js"></script>
+  </head>
+  <body class="w3-theme-l5">
+    <!--W3 schools code and styling used throughout the project-->
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a
+          class="
+            w3-bar-item
+            w3-button
+            w3-hide-medium
+            w3-hide-large
+            w3-right
+            w3-padding-large
+            w3-hover-white
+            w3-large
+            w3-theme-d2
+          "
+          href="javascript:void(0);"
+          onclick="openNav()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button w3-padding-large w3-theme-d4"
+        >
+          <i class="fa fa-home w3-margin-right"></i>Logo
+        </a>
+        <a
+          href="admlogin.html"
+          class="
+            w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white
+          "
+          title="Admin"
+        >
+          <i class="fa fa-globe"></i>
+        </a>
+        <a
+          href="instrlogin.html"
+          class="
+            w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white
+          "
+          title="Instructor"
+        >
+          <i class="fa fa-user"></i>
+        </a>
+        <div class="w3-dropdown-hover w3-hide-small"></div>
+        <a
+          href="signup.html"
+          class="
+            w3-bar-item
+            w3-button
+            w3-hide-small
+            w3-right
+            w3-padding-large
+            w3-hover-white
+          "
+          title="Sign Up"
+        >
+          <img
+            src="img/blank-profile-picture-973460_960_720.png"
+            class="w3-circle"
+            style="height: 23px; width: 23px"
+            alt="Sign Up"
+          />
+        </a>
+      </div>
+    </div>
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="
+        w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large
+      "
+    >
+      <a href="admlogin.html" class="w3-bar-item w3-button w3-padding-large"
+        >Admin</a
+      >
+      <a href="admlogin.html" class="w3-bar-item w3-button w3-padding-large"
+        >Admin</a
+      >
+      <a href="instrlogin.html" class="w3-bar-item w3-button w3-padding-large"
+        >Instructor</a
+      >
+      <a href="signup.html" class="w3-bar-item w3-button w3-padding-large"
+        >Create Account</a
+      >
+    </div>
+
+    <!-- Page Container -->
+    <div
+      class="w3-container w3-content"
+      style="max-width: 1400px; margin-top: 80px"
+    >
+      <!-- The Grid -->
+      <div class="w3-row">
+        <!-- Alert Box -->
+        <div
+          class="
+            w3-container
+            w3-display-container
+            w3-round
+            w3-theme-l4
+            w3-border
+            w3-theme-border
+            w3-margin-bottom
+          "
+        >
+          <p></p>
+          <h1>Assignment 1:</h1>
+          <ul>
+            <li><p>Due Date</p></li>
+            <li><p>10/26/2021 11.59 PM</p></li>
+            <li></li>
+          </ul>
+
+          Description
+          <p>
+            OBH has a reality game show called the Dating Game where the host,
+            SmartPants, instructs a group of novices on the finer points of
+            socializing. On one particular episode, SmartPants brings the group
+            into a club. The goal of each Contestant is to get phone numbers
+            from potential Dates at the club. He has num_rounds to do so. Three
+            types of threads: SmartPants Contestant Date Each Contestant arrives
+            at the club on his own (simulated by sleep(random time)). When the
+            Contestant arrives, he has to meet SmartPants. Contestant will do
+            busy waiting until SmartPants lets him know that he is available to
+            meet. SmartPants will talk to each Contestant in FCFS order (you can
+            use a Boolean array/vector, queue like structure in order to enforce
+            the order). After the initiation, Contestants enter the club to meet
+            a Date. If there is no Date available, the Contestant will kill some
+            time at the Juice Bar (use yield( ) and after sleep(random time)).
+          </p>
+
+          <p>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          </p>
+
+          <form
+            method="post"
+            enctype="multipart/form-data"
+            action=" https://wp.zybooks.com/form-viewer.php"
+          >
+            <p></p>
+            <div>
+              <label for="answer"></label>
+              <div class="container">
+                <textarea
+                  id="answer"
+                  name="answer"
+                  placeholder="Write your answer here"
+                  rows="3"
+                  cols="50"
+                ></textarea>
+              </div>
+            </div>
+
+            <p></p>
+            <p>
+              <label for="picture">Upload:</label>
+              <input type="file" id="picture" name="picture" />
+              <br />
+              <label class="container">
+                <input type="checkbox" id="saved" name="saved" value="yes" />
+                <span class="checkmark"></span>Save
+              </label>
+            </p>
+
+            <hr class="w3-clear" />
+            <div class="w3-row-padding" style="margin: 0 -16px"></div>
+
+            <input
+              type="submit"
+              class="w3-button w3-theme-d2 w3-margin-bottom"
+            />
+          </form>
+
+          <p></p>
+          <div></div>
+
+          <!-- End Left Column -->
+        </div>
+
+        <!-- Middle Column -->
+        <div class="w3-col m7">
+          <div class="w3-row-padding">
+            <div class="w3-col m12">
+              <div class="w3-card w3-round w3-white"></div>
+            </div>
+          </div>
+        </div>
+        <!--</form>-->
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-col m2"></div>
+      <br />
+
+      <br />
+
+      <div class="w3-card w3-round w3-white w3-padding-32 w3-center">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p>
+      </div>
+      <!-- </div>-->
+
+      <!-- End Page Container -->
+    </div>
+    <br />
+    <footer class="w3-cont0ainer w3-theme-d3 w3-padding-16">
+      <h5>Footer</h5>
+    </footer>
+    <footer class="w3-container w3-theme-d5">
+      <p>
+        Powered by
+        <a
+          href="https://stringbuilder101.github.io/resume/#lets-keep-in-touch"
+          target="_blank"
+          >@Polina</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
