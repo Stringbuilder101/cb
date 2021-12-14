@@ -15,10 +15,30 @@
    annygle@yahoo.com Dano600@@ for student, annygle1@yahoo.com  Dano600@@1 for instructor, and annygle2@yahoo.com Dano600@@@2 for admin. 
    With sign up page a user can sign up with ther first and last name, email(used as username), password, and in database it is assigned a unique id.
    
+   ![image](https://user-images.githubusercontent.com/90509231/146032971-0d8e1f16-6208-4850-a88f-079e5ab0b181.png)   http://localhost:2020/admlogin.html
+   ![image](https://user-images.githubusercontent.com/90509231/146033008-224d9764-9d71-43a4-a9a2-d7cf7c53e367.png)
+
+   Each sign in has password validation
+   ![image](https://user-images.githubusercontent.com/90509231/146033443-7407887b-e1e0-429c-8c2b-44379bf50662.png)
+   ![image](https://user-images.githubusercontent.com/90509231/146033622-b992eca6-8af2-4271-b43c-c66be8430b5f.png)
    
-   http://localhost:2020/admlogin.html
-   ![Screenshot (898)](https://user-images.githubusercontent.com/90509231/145153429-bf198a94-2741-4853-bc3e-b02f2e5759aa.png)
-    Username updates with the administrator who uses the database.
+![image](https://user-images.githubusercontent.com/90509231/146033662-3a11fa51-fb52-440f-a5ee-924174c8ef9a.png)
+The validation implemented for each account.
+User seession is possibe only if the user logged in:
+![image](https://user-images.githubusercontent.com/90509231/146034021-36cde670-8e63-4f80-b2b8-64a2756ee8e6.png)   ![Screenshot (898)](https://user-images.githubusercontent.com/90509231/145153429-bf198a94-2741-4853-bc3e-b02f2e5759aa.png)
+For instance if the user is not logged in and trying to access admin account.
+If the user is trying to access the account of admin of instructor with the username of a student it would not work.
+Admin view:
+![image](https://user-images.githubusercontent.com/90509231/146034739-88ee6f14-d768-4f0e-bbce-5b52b4fc7cde.png)
+![image](https://user-images.githubusercontent.com/90509231/146034792-cc25df54-e364-4372-af90-9bbdcf88e864.png)
+![image](https://user-images.githubusercontent.com/90509231/146034931-bb6b0182-9f6b-4c22-af06-e092332279a1.png)
+![image](https://user-images.githubusercontent.com/90509231/146035207-b8f53581-db32-43db-be65-40b0ec2688e7.png)
+
+
+<img src="blob:chrome-untrusted://media-app/e42a507b-cc7b-43a8-904d-a08bf15118af" alt="Screenshot 2021-12-14 11.04.52 AM.png"/>![image](https://user-images.githubusercontent.com/90509231/146034861-22fa4e8a-4de7-456d-8c1c-c4e8e7afae51.png)
+
+
+Username updates with the administrator who uses the database.
     ![Screenshot (900)](https://user-images.githubusercontent.com/90509231/145154096-11987f41-0edd-44c5-b120-7405a2fa7a51.png)
     Instructors, Students and Search queries.
     Instructors, students, and admin can log in to the other person account because they have a requrement when signing up to have password end with 2 for admin and 1 for
