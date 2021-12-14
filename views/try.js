@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChalkBoard</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="js/dashboard.js"></script>
+    <script>
+      function showTable(){
+      document.getElementById('table').style.visibility = "visible";
+      }
+      function hideTable(){
+      document.getElementById('table').style.visibility = "hidden";
+      }
+      </script>
+  </head>
+  <body class="w3-theme-l5">
+    <!--W3 schools code and styling used throughout the project-->
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-theme-d4">
+          <i class="fa fa-home w3-margin-right"></i>Logo </a>
+        <a href="admlogin.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Admin">
+          <i class="fa fa-globe"></i>
+        </a>
+        <a href="instrlogin.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Instructor">
+          <i class="fa fa-user"></i>
+        </a>
+        <div class="w3-dropdown-hover w3-hide-small"></div>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="Sign Out">
+          <img src="img/blank-profile-picture-973460_960_720.png" class="w3-circle" style="height:23px;width:23px" alt="Sign Out">
+        </a>
+      </div>
+    </div>
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="admlogin.html" class="w3-bar-item w3-button w3-padding-large">Admin</a>
+      <a href="admlogin.html" class="w3-bar-item w3-button w3-padding-large">Admin</a>
+      <a href="instrlogin.html" class="w3-bar-item w3-button w3-padding-large">Instructor</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Sign Out</a>
+    </div>
+    <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+      <!-- Header -->
+      <header class="w3-container" style="padding-top:22px">
+        <h5>
+          <b>
+            <i class="fa fa-dashboard"></i> <%=name%> My Dashboard</b>
+        </h5>
+      </header>
+      <div class="w3-panel">
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-third">
+            <h5>Regions</h5>
+            <img src="img/world.png" style="width:100%" alt="Google Regional Map">
+          </div>
+          <div class="w3-twothird">
+            <h5>About</h5> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <h5>General Stats</h5>
+        <p>Students Enrolled</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-center w3-padding w3-green" style="width:<%=(result12/100)*100%>%">+<%=(result12/100)*100%>%</div>
+        </div>
+        <p>Instructors Enrolled</p>
+        <div class="w3-grey">
+          <div class="w3-container w3-center w3-padding w3-orange" style="width:<%=(result11/6)*100%>%"><%=(result11/6)*100%>%</div>
+        </div>
+        <form method = "get", action="/createdb8">
+        <p>Courses Available</p>
+        
+        <div class="w3-grey">
+  
+          <div class="w3-container w3-center w3-padding w3-red" style="width: <%=(result10/20)*100%>%"><%=(result10/20)*100%>%</div>
+        </div>
+      </div>
+      
+
+
+      <hr>
+
+
+
+
+      <div class="w3-container">
+          <h5>Courses Availability(Enrollment)</h5>
+         
+          <table
+            class="
+              w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white
+           "
+          >
+            <tr>
+             
+              <% for(let [i] of result14.entries() || []){  %>
+             <p hidden > i : <%=result14[i]%> </p>
+                <tr><td><%=result14[i].course_ID%></td>
+                  <td>Available</td>
+                </tr>
+               <%} %>
+            </tr>
+          </table>
+        </br>
+        
+        <body onload="javascript:hideTable()">
+          <input type='button' onClick='javascript:showTable();' value="➡Courses"  class="w3-button w3-dark-grey">
+        
+          <h5>Courses (Offered)</h5>
+          <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white" id='table' border=1>
+           
+              <tr>
+               
+                <% for(let [i] of result3.entries() || []){  %>
+               <p hidden > i : <%=result3[i]%> </p>
+                  <tr><td><%=result3[i].course_ID%></td>
+                    <td>Offered</td>
+                  </tr>
+                 <%} %>
+              </tr>
+            </table>
+          </body>  
+        <br>
+        
+      </div>
+      <hr>
+      <div class="w3-container">
+        <h5>Instructors Enrolled</h5>
+          <ul class="w3-ul w3-card-4 w3-white">
+            <% for(let [i] of result15.entries() || []){  %>
+              <p hidden > i : <%=result15[i]%> </p>
+            <li class="w3-padding-16">
+              <img
+                src="img/blank-profile-picture-973460_960_720.png"
+                alt="avatar"
+                class="w3-left w3-circle w3-margin-right"
+                style="width: 35px"
+              />
+              <span class="w3-xlarge"> <%=result15[i].instructor_name%></span>
+              <br />
+            </li>
+            <%} %>
+          </ul>
+        </div>
+
+      <div class="w3-container">
+        <h5>Students Enrolled</h5>
+        <ul class="w3-ul w3-card-4 w3-white">
+          <% for(let [i] of result15.entries() || []){  %>
+            <p hidden > i : <%=result16[i]%> </p>
+          <li class="w3-padding-16">
+            <img
+              src="img/blank-profile-picture-973460_960_720.png"
+              alt="avatar"
+              class="w3-left w3-circle w3-margin-right"
+              style="width: 35px"
+            />
+            <span class="w3-xlarge"> <%=result16[i].student_ID%></span>
+            <br />
+          </li>
+          <%} %>
+        </ul>
+      </div>
+      <hr>
+      <div class="w3-container">
+        <h5>Search Queries</h5>
+        <div class="w3-row">
+          <% for(let [i] of result17.entries() || []){  %>
+            <p hidden > i : <%=result17[i]%> </p>
+          <div class="w3-col m2 text-center">
+            <img class="w3-circle" src="img/blank-profile-picture-973460_960_720.png" alt="avatar" style="width:96px;height:96px">
+          </div>
+          <div class="w3-col m10 w3-container">
+            <h4><%=result17[i].type_of_user%> <span class="w3-opacity w3-medium"><%=result17[i].date%></span>
+            </h4>
+            <p><%=result17[i].actual_text%></p>
+            <br>
+          </div>
+          <%} %>
+        </div>
+        </div>
+      </div>
+      <br>
+    
+    <footer class="w3-cont0ainer w3-theme-d3 w3-padding-16">
+      <h5>Footer</h5>
+    </footer>
+    <footer class="w3-container w3-theme-d5">
+      <p>Powered by <a href="https://stringbuilder101.github.io/resume/#lets-keep-in-touch" target="_blank">@Polina</a>
+      </p>
+    </footer>
+  </body>
+</html>
