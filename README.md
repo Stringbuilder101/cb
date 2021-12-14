@@ -5,8 +5,16 @@
    One additional thing is needed to be downloaded is npm install ejs. User, Instructor, or Admin can log in but can not access each other's pages. Sign Out button implemented      to sign out which takes the user to a homepage. Admin Dashboard shows sample queries of students or instructors for courses and dates, courses, and instructors and students      available. The database is very small only a few instudents or instructors for demonstration. Color lines students or instructors enrolled shows actual percentage for            students, instructors, or courses actually enrolled or available. If not running because of the error : ADDR IN USE please change the port manually
    ![Screenshot (892)](https://user-images.githubusercontent.com/90509231/145150882-d99d0ff5-66c0-4961-a4ff-dd038fc0c136.png)
    
-   ![Screenshot (895)](https://user-images.githubusercontent.com/90509231/145152409-aba297f8-eec0-4c79-ad0d-08a0febc6a01.png)
-   Here are the passwords and to sign up and sign in as instructor password and email should end with 1, admin 2, and student do not have to have any digits in their email or      password.
+   ![Screenshot (921)](https://user-images.githubusercontent.com/90509231/146027596-80f93470-3a67-4f06-bf82-c1bd53d8e3d3.png)
+   Database stores information about usrs and courses, 
+   ![Screenshot (923)](https://user-images.githubusercontent.com/90509231/146028383-f64e621c-dab7-4678-815f-b41f045ee77a.png)
+
+   Here are the passwords and to sign up and sign in as instructor password and email should end with 1, admin 2, and student do not have to have any      digits in their email or password.
+   User sign up is implemented as users, can sign up as admin, instructor, or student by having email and password that end without a number, with 1 for 
+   instructor, and 2 for admin. Passwords and usernames and types are in database screenshot. Example of making a type of user is
+   annygle@yahoo.com Dano600@@ for student, annygle1@yahoo.com  Dano600@@1 for instructor, and annygle2@yahoo.com Dano600@@@2 for admin. 
+   With sign up page a user can sign up with ther first and last name, email(used as username), password, and in database it is assigned a unique id.
+   
    http://localhost:2020/admlogin.html
    ![Screenshot (898)](https://user-images.githubusercontent.com/90509231/145153429-bf198a94-2741-4853-bc3e-b02f2e5759aa.png)
     Username updates with the administrator who uses the database.
