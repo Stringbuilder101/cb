@@ -19,6 +19,10 @@ conn.connect(function (err) {
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static("public"));
+
+//Serves all the request which includes /images in the url from Images folder
+app.use("img", express.static(__dirname + "img"));
 app.set("view-engine", "ejs");
 //signup
 app.get("/signup.html", function (req, res) {
@@ -108,6 +112,10 @@ app.post("/signup", function (req, res) {
   console.log("I am in middleware");
 });
 
+app.get("/js/hpscript.js", function (req, res) {
+  res.sendFile(__dirname + "/js/hpscript.js");
+  console.log("sending image");
+});
 //login instructor
 app.get("/instrlogin.html", function (req, res) {
   res.sendFile(__dirname + "/instrlogin.html");
@@ -181,7 +189,13 @@ app.post("/admlogin", function (req, res) {
   const sql10 = `select count(*) from myapp.courses WHERE available ='Y' `;
   const sql11 = `select count(*) from myapp.instructors WHERE enrolled ='A' `;
   const sql12 = `select count(*) from myapp.students WHERE enrolled ='E' `;
+  const sql23 = `select count(*) from myapp.students `;
+  const sql24 = `select count(*) from myapp.instructors `;
+
   const sql17 = `select * from myapp.qq `;
+
+  const sql20 = `select  firstname, lastname from myapp.users where type = "S"`;
+  const sql21 = `select  firstname, lastname from myapp.users where type = "I"`;
 
   conn.query(sql10, (err, result10) => {
     if (err) throw err;
@@ -225,35 +239,78 @@ app.post("/admlogin", function (req, res) {
                   for (var i = 0; i < result3.length; i++) {
                     console.log(i, result3[i]);
                   }
+                  conn.query(sql20, (err, result20) => {
+                    if (err) throw err;
+                    console.log(JSON.stringify(result20));
 
-                  /** console.log(
-            JSON.stringify(result14)
-              .replaceAll("course_ID", "")
-              .replaceAll("[{")
-              .replaceAll("}]", "")
-              .replaceAll(":", "")
-              .replaceAll("{", "")
-              .replaceAll("}", "")
-              .replaceAll("\"", "")
-          );*/
+                    for (var i = 0; i < result20.length; i++) {
+                      console.log(i, result20[i]);
+                    }
+                    conn.query(sql21, (err, result21) => {
+                      if (err) throw err;
+                      console.log(JSON.stringify(result21));
 
-                  res.render("try.ejs", {
-                    name: username,
-                    result10: JSON.stringify(result10)
-                      .replace(/^\D+/g, "")
-                      .replaceAll("}]", ""),
-                    result11: JSON.stringify(result11)
-                      .replace(/^\D+/g, "")
-                      .replaceAll("}]", ""),
+                      for (var i = 0; i < result21.length; i++) {
+                        console.log(i, result21[i]);
+                      }
+                      conn.query(sql23, (err, result23) => {
+                        if (err) throw err;
+                        console.log(JSON.stringify(result23));
 
-                    result12: JSON.stringify(result12)
-                      .replace(/^\D+/g, "")
-                      .replaceAll("}]", ""),
-                    result14: result14,
-                    result15: result15,
-                    result16: result16,
-                    result17: result17,
-                    result3: result3,
+                        for (var i = 0; i < result23.length; i++) {
+                          console.log(i, result23[i]);
+                        }
+                        conn.query(sql24, (err, result24) => {
+                          if (err) throw err;
+                          console.log(JSON.stringify(result24));
+
+                          for (var i = 0; i < result24.length; i++) {
+                            console.log(i, result24[i]);
+                          }
+                          result23 = JSON.stringify(result23)
+                            .replaceAll("course_ID", "")
+                            .replaceAll("[{")
+                            .replaceAll("}]", "")
+                            .replaceAll(":", "")
+                            .replaceAll("{", "")
+                            .replaceAll("}", "")
+                            .replaceAll('"', "")
+                            .replaceAll("undefinedcount(*)", "");
+                          result24 = JSON.stringify(result24)
+                            .replaceAll("course_ID", "")
+                            .replaceAll("[{")
+                            .replaceAll("}]", "")
+                            .replaceAll(":", "")
+                            .replaceAll("{", "")
+                            .replaceAll("}", "")
+                            .replaceAll('"', "")
+                            .replaceAll("undefinedcount(*)", "");
+
+                          res.render("try.ejs", {
+                            name: username,
+                            result10: JSON.stringify(result10)
+                              .replace(/^\D+/g, "")
+                              .replaceAll("}]", ""),
+                            result11: JSON.stringify(result11)
+                              .replace(/^\D+/g, "")
+                              .replaceAll("}]", ""),
+
+                            result12: JSON.stringify(result12)
+                              .replace(/^\D+/g, "")
+                              .replaceAll("}]", ""),
+                            result14: result14,
+                            result15: result15,
+                            result16: result16,
+                            result17: result17,
+                            result3: result3,
+                            result20: result20,
+                            result21: result21,
+                            result23: result23,
+                            result24: result24,
+                          });
+                        });
+                      });
+                    });
                   });
                 });
               });
@@ -264,7 +321,97 @@ app.post("/admlogin", function (req, res) {
     });
   });
 });
+app.get("/img/forest.png", function (req, res) {
+  res.sendFile(__dirname + "/img/forest.png");
+  console.log("sending image");
+});
+app.get("/img/american-football-67439_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/american-football-67439_960_720.png");
+  console.log("sending image");
+});
+app.get(
+  "/img/artificial-intelligence-2167835_960_720.png",
+  function (req, res) {
+    res.sendFile(
+      __dirname + "/img/artificial-intelligence-2167835_960_720.png"
+    );
+    console.log("sending image");
+  }
+);
+app.get("/img/coins-3344603_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/coins-3344603_960_720.png");
+  console.log("sending image");
+});
+app.get("/img/fantasy-2824500_960_720.jpg", function (req, res) {
+  res.sendFile(__dirname + "/img/fantasy-2824500_960_720.jpg");
+  console.log("sending image");
+});
 
-app.listen("2020", () => {
-  console.log("Server started on port 2020");
+app.get("/img/success-6595539_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/success-6595539_960_720.png");
+  console.log("sending image");
+});
+
+app.get("/img/pumpkin-5372947_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/pumpkin-5372947_960_720.png");
+  console.log("sending image");
+});
+app.get("/img/question-mark-2492009_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/forest.png");
+  console.log("sending image");
+});
+
+app.get("/img/computer-1331579_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/computer-1331579_960_720.png");
+  console.log("sending image");
+});
+
+app.get("/img/blank-profile-picture-973460_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/blank-profile-picture-973460_960_720.png");
+  console.log("sending image");
+});
+app.get("/img/learn-897410_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/learn-897410_960_720.png");
+  console.log("sending image");
+});
+
+app.get("/img/halloween-959049_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/halloween-959049_960_720.png");
+  console.log("sending image");
+});
+app.get("/img/cat-323262_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/cat-323262_960_720.png");
+  console.log("sending image");
+});
+
+app.get("/img/pile-1239225_960_720.jpg", function (req, res) {
+  res.sendFile(__dirname + "/img/cat-323262_960_720.png");
+  console.log("sending image");
+});
+app.get("/img/blank-profile-picture-973460_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/blank-profile-picture-973460_960_720.png");
+  console.log("sending image");
+});
+
+app.get("/js/hpscript.js", function (req, res) {
+  res.sendFile(__dirname + "/js/hpscript.js");
+  console.log("sending image");
+});
+
+app.get("/css/instrview.css", function (req, res) {
+  res.sendFile(__dirname + "/css/instrview.css");
+  console.log("sending image");
+});
+
+app.get("/img/pets-3715733_960_720.png", function (req, res) {
+  res.sendFile(__dirname + "/img/pets-3715733_960_720.png");
+  console.log("sending image");
+});
+app.get("/img/world.png", function (req, res) {
+  res.sendFile(__dirname + "/img/world.png");
+  console.log("sending image");
+});
+const port = "82"
+app.listen(port, () => {
+  console.log("Server started on port 82");
 });
