@@ -70,13 +70,15 @@
       <hr>
       <div class="w3-container">
         <h5>General Stats</h5>
+
         <p>Students Enrolled</p>
+      
         <div class="w3-grey">
-          <div class="w3-container w3-center w3-padding w3-green" style="width:<%=(result12/100)*100%>%">+<%=(result12/100)*100%>%</div>
+          <div class="w3-container w3-center w3-padding w3-green" style="width:<%=(result12/result23)*100%>%">+<%=(result12/result23)*100%>%</div>
         </div>
         <p>Instructors Enrolled</p>
         <div class="w3-grey">
-          <div class="w3-container w3-center w3-padding w3-orange" style="width:<%=(result11/6)*100%>%"><%=(result11/6)*100%>%</div>
+          <div class="w3-container w3-center w3-padding w3-orange" style="width:<%=(result11/result24)*100%>%"><%=(result11/+result24)*100%>%</div>
         </div>
         <form method = "get", action="/createdb8">
         <p>Courses Available</p>
@@ -96,7 +98,6 @@
 
       <div class="w3-container">
           <h5>Courses Availability(Enrollment)</h5>
-         
           <table
             class="
               w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white
@@ -136,10 +137,10 @@
       </div>
       <hr>
       <div class="w3-container">
-        <h5>Instructors Enrolled</h5>
+        <h5>Instructors (Total)</h5>
           <ul class="w3-ul w3-card-4 w3-white">
-            <% for(let [i] of result15.entries() || []){  %>
-              <p hidden > i : <%=result15[i]%> </p>
+            <% for(let [i] of result21.entries() || []){  %>
+              <p hidden > i : <%=result21[i]%> </p>
             <li class="w3-padding-16">
               <img
                 src="img/blank-profile-picture-973460_960_720.png"
@@ -147,7 +148,8 @@
                 class="w3-left w3-circle w3-margin-right"
                 style="width: 35px"
               />
-              <span class="w3-xlarge"> <%=result15[i].instructor_name%></span>
+              <span class="w3-xlarge"> <%=result21[i].firstname%></span>
+            <span class="w3-xlarge"> <%=result21[i].lastname%></span>
               <br />
             </li>
             <%} %>
@@ -155,10 +157,10 @@
         </div>
 
       <div class="w3-container">
-        <h5>Students Enrolled</h5>
+        <h5>Students (Total)</h5>
         <ul class="w3-ul w3-card-4 w3-white">
-          <% for(let [i] of result15.entries() || []){  %>
-            <p hidden > i : <%=result16[i]%> </p>
+          <% for(let [i] of result20.entries() || []){  %>
+            <p hidden > i : <%=result20[i]%> </p>
           <li class="w3-padding-16">
             <img
               src="img/blank-profile-picture-973460_960_720.png"
@@ -166,7 +168,8 @@
               class="w3-left w3-circle w3-margin-right"
               style="width: 35px"
             />
-            <span class="w3-xlarge"> <%=result16[i].student_ID%></span>
+            <span class="w3-xlarge"> <%=result20[i].firstname%></span>
+            <span class="w3-xlarge"> <%=result20[i].lastname%></span>
             <br />
           </li>
           <%} %>
