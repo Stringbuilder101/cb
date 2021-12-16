@@ -107,6 +107,19 @@ app.post("/signup", function (req, res) {
     console.log(result);
     // res.send("User inserted");
   });
+  /*
+  let sql31 = "INSERT INTO myapp.students SET ?";
+  let query = conn.query(sql31, user, (err, result31) => {
+    if (err) throw err;
+    console.log(result31);
+    // res.send("User inserted");
+  });
+  let sql32 = "INSERT INTO myapp.instructors SET ?";
+  let query = conn.query(sql32, user, (err, result) => {
+    if (err) throw err;
+    console.log(result);
+    // res.send("User inserted");
+  });*/
 
   res.sendFile(__dirname + "/index.html");
   console.log("I am in middleware");
@@ -186,7 +199,12 @@ app.post("/admlogin", function (req, res) {
   const sql5 = `SELECT * FROM myapp.students;`;
   const sql16 = `select student_ID from myapp.students WHERE enrolled ='E' `;
 
+  const sql31 = `select count(*) from myapp.users WHERE type ='I' `;
+  const sql32 = `select count(*) from myapp.users WHERE type ='S' `;
+
   const sql10 = `select count(*) from myapp.courses WHERE available ='Y' `;
+  const sql100 = `select count(*) from myapp.courses `;
+
   const sql11 = `select count(*) from myapp.instructors WHERE enrolled ='A' `;
   const sql12 = `select count(*) from myapp.students WHERE enrolled ='E' `;
   const sql23 = `select count(*) from myapp.students `;
@@ -267,46 +285,103 @@ app.post("/admlogin", function (req, res) {
                           for (var i = 0; i < result24.length; i++) {
                             console.log(i, result24[i]);
                           }
-                          result23 = JSON.stringify(result23)
-                            .replaceAll("course_ID", "")
-                            .replaceAll("[{")
-                            .replaceAll("}]", "")
-                            .replaceAll(":", "")
-                            .replaceAll("{", "")
-                            .replaceAll("}", "")
-                            .replaceAll('"', "")
-                            .replaceAll("undefinedcount(*)", "");
-                          result24 = JSON.stringify(result24)
-                            .replaceAll("course_ID", "")
-                            .replaceAll("[{")
-                            .replaceAll("}]", "")
-                            .replaceAll(":", "")
-                            .replaceAll("{", "")
-                            .replaceAll("}", "")
-                            .replaceAll('"', "")
-                            .replaceAll("undefinedcount(*)", "");
+                          conn.query(sql31, (err, result31) => {
+                            if (err) throw err;
+                            console.log(JSON.stringify(result31));
 
-                          res.render("try.ejs", {
-                            name: username,
-                            result10: JSON.stringify(result10)
-                              .replace(/^\D+/g, "")
-                              .replaceAll("}]", ""),
-                            result11: JSON.stringify(result11)
-                              .replace(/^\D+/g, "")
-                              .replaceAll("}]", ""),
+                            for (var i = 0; i < result31.length; i++) {
+                              console.log(i, result31[i]);
+                            }
+                            conn.query(sql32, (err, result32) => {
+                              if (err) throw err;
+                              console.log(JSON.stringify(result32));
 
-                            result12: JSON.stringify(result12)
-                              .replace(/^\D+/g, "")
-                              .replaceAll("}]", ""),
-                            result14: result14,
-                            result15: result15,
-                            result16: result16,
-                            result17: result17,
-                            result3: result3,
-                            result20: result20,
-                            result21: result21,
-                            result23: result23,
-                            result24: result24,
+                              for (var i = 0; i < result32.length; i++) {
+                                console.log(i, result32[i]);
+                              }
+                              conn.query(sql100, (err, result100) => {
+                                if (err) throw err;
+                                console.log(JSON.stringify(result100));
+  
+                                for (var i = 0; i < result100.length; i++) {
+                                  console.log(i, result100[i]);
+                                }
+                              result23 = JSON.stringify(result23)
+                                .replaceAll("course_ID", "")
+                                .replaceAll("[{")
+                                .replaceAll("}]", "")
+                                .replaceAll(":", "")
+                                .replaceAll("{", "")
+                                .replaceAll("}", "")
+                                .replaceAll('"', "")
+                                .replaceAll("undefinedcount(*)", "");
+                              result24 = JSON.stringify(result24)
+                                .replaceAll("course_ID", "")
+                                .replaceAll("[{")
+                                .replaceAll("}]", "")
+                                .replaceAll(":", "")
+                                .replaceAll("{", "")
+                                .replaceAll("}", "")
+                                .replaceAll('"', "")
+                                .replaceAll("undefinedcount(*)", "");
+
+                              result31 = JSON.stringify(result31)
+                                .replaceAll("count(*)", "")
+                                .replaceAll("[{")
+                                .replaceAll("}]", "")
+                                .replaceAll(":", "")
+                                .replaceAll("{", "")
+                                .replaceAll("}", "")
+                                .replaceAll('"', "")
+                                .replaceAll("undefined", "");
+
+                              result32 = JSON.stringify(result32)
+                                .replaceAll("count(*)", "")
+                                .replaceAll("[{")
+                                .replaceAll("}]", "")
+                                .replaceAll(":", "")
+                                .replaceAll("{", "")
+                                .replaceAll("}", "")
+                                .replaceAll('"', "")
+                                .replaceAll("undefined", "");
+
+                                result100 = JSON.stringify(result100)
+                                .replaceAll("count(*)", "")
+                                .replaceAll("[{")
+                                .replaceAll("}]", "")
+                                .replaceAll(":", "")
+                                .replaceAll("{", "")
+                                .replaceAll("}", "")
+                                .replaceAll('"', "")
+                                .replaceAll("undefined", "");
+
+                              res.render("try.ejs", {
+                                name: username,
+                                result10: JSON.stringify(result10)
+                                  .replace(/^\D+/g, "")
+                                  .replaceAll("}]", ""),
+                                result11: JSON.stringify(result11)
+                                  .replace(/^\D+/g, "")
+                                  .replaceAll("}]", ""),
+
+                                result12: JSON.stringify(result12)
+                                  .replace(/^\D+/g, "")
+                                  .replaceAll("}]", ""),
+                                result14: result14,
+                                result15: result15,
+                                result16: result16,
+                                result17: result17,
+                                result3: result3,
+                                result20: result20,
+                                result21: result21,
+                                result23: result23,
+                                result24: result24,
+                                result31: result31,
+                                result32: result32,
+                                result100: result100
+                              });
+                              });
+                            });
                           });
                         });
                       });
@@ -411,7 +486,7 @@ app.get("/img/world.png", function (req, res) {
   res.sendFile(__dirname + "/img/world.png");
   console.log("sending image");
 });
-const port = "82"
+const port = "82";
 app.listen(port, () => {
-  console.log("Server started on port 82");
+  console.log("Server started on port 82");;
 });
