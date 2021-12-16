@@ -43,6 +43,8 @@ Database updates, unique id adds:
 ![Screenshot (925)](https://user-images.githubusercontent.com/90509231/146042847-a210fd0d-671b-45a1-9666-61aa2fda36c9.png)
 
 and it shows in admin view:
+![Screenshot (929)](https://user-images.githubusercontent.com/90509231/146348812-6de497bd-03e0-4116-abcc-c68e5b2fb173.png)
+
 
 ![image](https://user-images.githubusercontent.com/90509231/146043258-bcc7e0b6-b6c3-4787-8eba-20d4396837e0.png)
 
