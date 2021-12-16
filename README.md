@@ -26,7 +26,7 @@ Instructor log in
    
 ![image](https://user-images.githubusercontent.com/90509231/146033662-3a11fa51-fb52-440f-a5ee-924174c8ef9a.png)
 The validation implemented for each account.
-User seession is possibe only if the user logged in:
+User session is possibe only if the user logged in:
 ![image](https://user-images.githubusercontent.com/90509231/146034021-36cde670-8e63-4f80-b2b8-64a2756ee8e6.png)   ![Screenshot (898)](https://user-images.githubusercontent.com/90509231/145153429-bf198a94-2741-4853-bc3e-b02f2e5759aa.png)
 For instance if the user is not logged in and trying to access admin account.
 If the user is trying to access the account of admin of instructor with the username of a student it would not work.
