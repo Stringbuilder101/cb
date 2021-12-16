@@ -1,6 +1,6 @@
-# website https://72e4-96-250-179-190.ngrok.io/signup
 
-# website
+# [CS 355 Chalkboard](https://72e4-96-250-179-190.ngrok.io/)
+
    One very important aspect is that to run the program the server needs to be connected and the port might be in use for running is better to use port 2020.
    One additional thing is needed to be downloaded is npm install ejs. User, Instructor, or Admin can log in but can not access each other's pages. Sign Out button implemented      to sign out which takes the user to a homepage. Admin Dashboard shows sample queries of students or instructors for courses and dates, courses, and instructors and students      available. The database is very small and has only a few students or instructors for demonstration. Color lines students or instructors enrolled shows actual percentage for            students, instructors, or courses actually enrolled or available. If not running because of the error : ADDR IN USE please change the port manually
    ![Screenshot (892)](https://user-images.githubusercontent.com/90509231/145150882-d99d0ff5-66c0-4961-a4ff-dd038fc0c136.png)
