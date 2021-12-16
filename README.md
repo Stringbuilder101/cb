@@ -126,8 +126,8 @@ Username updates with the administrator who uses the database.
    A more visual representation and functionality of the web-site and additionally added to the following repository: 
    https://codepen.io/polinazclements/pens/public?cursor=ZD0wJm89MSZwPTEmdj01Njc0NDI0Ng==
 4. HTML, CSS, JS
-5. .PHP
-6. Mongo DB 
+5. Express and Node.s
+6. MySQL
 7. https://github.com/Stringbuilder101/chalkboard/blob/main/README.md https://stringbuilder101.github.io/chalkboard/    
 8. All pages are connected but not accessible because of the password.
 9. https://codepen.io/polinazclements/pens/public?grid_type=list List of all pages
