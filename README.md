@@ -15,7 +15,8 @@
    annygle@yahoo.com Dano600@@ for student, annygle1@yahoo.com  Dano600@@1 for instructor, and annygle2@yahoo.com Dano600@@@2 for admin. 
    With sign up page a user can sign up with ther first and last name, email(used as username), password, and in database it is assigned a unique id.
    
-   ![image](https://user-images.githubusercontent.com/90509231/146032971-0d8e1f16-6208-4850-a88f-079e5ab0b181.png)   http://localhost:2020/admlogin.html
+   
+   ![image](https://user-images.githubusercontent.com/90509231/146032971-0d8e1f16-6208-4850-a88f-079e5ab0b181.png)   
    ![image](https://user-images.githubusercontent.com/90509231/146033008-224d9764-9d71-43a4-a9a2-d7cf7c53e367.png)
 
    Each sign in has password validation
