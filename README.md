@@ -2,7 +2,7 @@
 
 # website
    One very important aspect is that to run the program the server needs to be connected and the port might be in use for running is better to use port 2020.
-   One additional thing is needed to be downloaded is npm install ejs. User, Instructor, or Admin can log in but can not access each other's pages. Sign Out button implemented      to sign out which takes the user to a homepage. Admin Dashboard shows sample queries of students or instructors for courses and dates, courses, and instructors and students      available. The database is very small only a few instudents or instructors for demonstration. Color lines students or instructors enrolled shows actual percentage for            students, instructors, or courses actually enrolled or available. If not running because of the error : ADDR IN USE please change the port manually
+   One additional thing is needed to be downloaded is npm install ejs. User, Instructor, or Admin can log in but can not access each other's pages. Sign Out button implemented      to sign out which takes the user to a homepage. Admin Dashboard shows sample queries of students or instructors for courses and dates, courses, and instructors and students      available. The database is very small and has only a few students or instructors for demonstration. Color lines students or instructors enrolled shows actual percentage for            students, instructors, or courses actually enrolled or available. If not running because of the error : ADDR IN USE please change the port manually
    ![Screenshot (892)](https://user-images.githubusercontent.com/90509231/145150882-d99d0ff5-66c0-4961-a4ff-dd038fc0c136.png)
    
    ![Screenshot (921)](https://user-images.githubusercontent.com/90509231/146027596-80f93470-3a67-4f06-bf82-c1bd53d8e3d3.png)
@@ -16,7 +16,7 @@
    With sign up page a user can sign up with ther first and last name, email(used as username), password, and in database it is assigned a unique id.
    ![Screenshot (928)](https://user-images.githubusercontent.com/90509231/146342726-bd340479-8af9-4663-878e-d25ef8e329b5.png)
 
-   ![image](https://user-images.githubusercontent.com/90509231/146032971-0d8e1f16-6208-4850-a88f-079e5ab0b181.png)   http://localhost:2020/admlogin.html
+   ![image](https://user-images.githubusercontent.com/90509231/146032971-0d8e1f16-6208-4850-a88f-079e5ab0b181.png)   
    ![image](https://user-images.githubusercontent.com/90509231/146033008-224d9764-9d71-43a4-a9a2-d7cf7c53e367.png)
 
    Each sign in has password validation
