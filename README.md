@@ -6,7 +6,7 @@
    ![Screenshot (892)](https://user-images.githubusercontent.com/90509231/145150882-d99d0ff5-66c0-4961-a4ff-dd038fc0c136.png)
    
    ![Screenshot (921)](https://user-images.githubusercontent.com/90509231/146027596-80f93470-3a67-4f06-bf82-c1bd53d8e3d3.png)
-   Database stores information about usrs and courses, 
+   Database stores information about users and courses, 
    ![Screenshot (923)](https://user-images.githubusercontent.com/90509231/146028383-f64e621c-dab7-4678-815f-b41f045ee77a.png)
 
    Here are the passwords and to sign up and sign in as instructor password and email should end with 1, admin 2, and student do not have to have any      digits in their email or password and ends with @.
