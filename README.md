@@ -1,5 +1,5 @@
 
-# [CS 355 Chalkboard](https://72e4-96-250-179-190.ngrok.io/)
+# [CS 355 Chalkboard](https://68dd-96-250-179-190.ngrok.io/index.html)
 The link to a whole repository with dependencies in place. reguires only nodemon download, ejs download, node and express.
 https://drive.google.com/drive/folders/1l2DS_qK78yo3wTKhvuzR7QFdIRga18xK?usp=sharing
 
