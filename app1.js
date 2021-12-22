@@ -266,5 +266,5 @@ app.post("/admlogin", function (req, res) {
 });
 
 app.listen("2021", () => {
-  console.log("Server started on port 2021");
+  console.log("Server started on port 2021");;
 });

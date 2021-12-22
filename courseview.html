@@ -18,8 +18,105 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="css/homepg.css" />
-    <script src="js/hpscript.js"></script>
+    <link rel="stylesheet" href="css/courseview.css" />
+    <script src="js/courseview.js"></script>
+    <style>
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Raleway", sans-serif;
+      }
+
+      html,
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-family: "Open Sans", sans-serif;
+      }
+      #spec {
+        border-radius: 2px;
+      }
+      #ViostreamIframe2 {
+        border: 0px;
+        width: 100%;
+        height: 100%;
+      }
+      #ViostreamIframe1 {
+        border: 0px;
+        width: 100%;
+        height: 100%;
+      }
+      #ViostreamIframe3 {
+        border: 0px;
+        width: 100%;
+        height: 100%;
+      }
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      input[type="checkbox"],
+      select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+
+      #special {
+        display: none;
+      }
+    </style>
+    <script>
+      // Accordion
+      function myFunction(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className += " w3-theme-d1";
+        } else {
+          x.className = x.className.replace("w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace(" w3-theme-d1", "");
+        }
+      }
+
+      // Used to toggle the menu on smaller screens when clicking on the menu button
+      function openNav() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
   </head>
   <body class="w3-theme-l5">
     <!--W3 schools code and styling used throughout the project-->
@@ -110,6 +207,7 @@
       >
     </div>
     <!-- Page Container -->
+
     <!-- Page Container -->
     <div
       class="w3-container w3-content"
@@ -122,10 +220,10 @@
           <!-- Profile -->
           <div class="w3-card w3-round w3-white">
             <div class="w3-container">
-              <h4 class="w3-center">CS 780</h4>
+              <h4 class="w3-center"></h4>
               <p class="w3-center">
                 <img
-                  src="img/blank-profile-picture-973460_960_720.png"
+                  src="https://www.w3schools.com/howto/img_avatar.png"
                   class="w3-circle"
                   style="height: 106px; width: 106px"
                   alt="Avatar"
@@ -141,6 +239,7 @@
             </div>
           </div>
           <br />
+
           <!-- Accordion -->
           <div class="w3-card w3-round">
             <div class="w3-white">
@@ -164,9 +263,8 @@
                   <a
                     href="https://docs.google.com/spreadsheets/d/1PY2dcfOuYqjhWCxd9wJRb8NPrMrmlpqsy18Zl46chjY/edit#gid=0"
                     class="w3-bar-item w3-button w3-padding w3"
-                  >
-                    <i class="fa fa-bell fa-fw"></i>
-                  </a>
+                    ><i class="fa fa-bell fa-fw"></i
+                  ></a>
                 </div>
               </div>
               <button
@@ -180,17 +278,15 @@
                   <a
                     href="https://us02web.zoom.us/j/85389892082"
                     class="w3-bar-item w3-button w3-padding w3"
-                  >
-                    <i class="fa fa-play fa-fw"></i>
-                  </a>
+                    ><i class="fa fa-play fa-fw"></i
+                  ></a>
                 </p>
                 <p>
                   <a
                     href="https://us02web.zoom.us/j/85389892082"
                     class="w3-bar-item w3-button w3-padding w3"
-                  >
-                    <i class="fa fa-play fa-fw"></i>
-                  </a>
+                    ><i class="fa fa-play fa-fw"></i
+                  ></a>
                 </p>
               </div>
               <button
@@ -207,59 +303,54 @@
                     <a
                       href="https://docs.google.com/spreadsheets/d/1PY2dcfOuYqjhWCxd9wJRb8NPrMrmlpqsy18Zl46chjY/edit#gid=0"
                       class="w3-bar-item w3-button w3-padding w3"
-                    >
-                      <i class="fa fa-book fa-fw"></i>
-                    </a>
+                      ><i class="fa fa-book fa-fw"></i
+                    ></a>
                   </div>
                   <div class="w3-half">
                     <a
                       href="https://docs.google.com/spreadsheets/d/1PY2dcfOuYqjhWCxd9wJRb8NPrMrmlpqsy18Zl46chjY/edit#gid=0"
                       class="w3-bar-item w3-button w3-padding w3"
-                    >
-                      <i class="fa fa-book fa-fw"></i>
-                    </a>
+                      ><i class="fa fa-book fa-fw"></i
+                    ></a>
                   </div>
                   <div class="w3-half">
                     <a
                       href="https://docs.google.com/spreadsheets/d/1PY2dcfOuYqjhWCxd9wJRb8NPrMrmlpqsy18Zl46chjY/edit#gid=0"
                       class="w3-bar-item w3-button w3-padding w3"
-                    >
-                      <i class="fa fa-book fa-fw"></i>
-                    </a>
+                      ><i class="fa fa-book fa-fw"></i
+                    ></a>
                   </div>
                   <div class="w3-half">
                     <a
                       href="https://docs.google.com/spreadsheets/d/1PY2dcfOuYqjhWCxd9wJRb8NPrMrmlpqsy18Zl46chjY/edit#gid=0"
                       class="w3-bar-item w3-button w3-padding w3"
-                    >
-                      <i class="fa fa-book fa-fw"></i>
-                    </a>
+                      ><i class="fa fa-book fa-fw"></i
+                    ></a>
                   </div>
                   <div class="w3-half">
                     <a
                       href="https://docs.google.com/spreadsheets/d/1PY2dcfOuYqjhWCxd9wJRb8NPrMrmlpqsy18Zl46chjY/edit#gid=0"
                       class="w3-bar-item w3-button w3-padding w3"
-                    >
-                      <i class="fa fa-book fa-fw"></i>
-                    </a>
+                      ><i class="fa fa-book fa-fw"></i
+                    ></a>
                   </div>
                   <div class="w3-half">
                     <a
                       href="https://docs.google.com/spreadsheets/d/1PY2dcfOuYqjhWCxd9wJRb8NPrMrmlpqsy18Zl46chjY/edit#gid=0"
                       class="w3-bar-item w3-button w3-padding w3"
-                    >
-                      <i class="fa fa-book fa-fw"></i>
-                    </a>
+                      ><i class="fa fa-book fa-fw"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <br />
+
           <!-- Interests -->
           <div class="w3-card w3-round w3-white w3-hide-small">
             <div class="w3-container">
-              <p>Pending Approval</p>
+              <p>Interests</p>
               <p>
                 <span class="w3-tag w3-small w3-theme-d5"
                   >Machine Learning</span
@@ -280,6 +371,7 @@
             </div>
           </div>
           <br />
+
           <!-- Alert Box -->
           <div
             class="
@@ -299,16 +391,14 @@
             >
               <i class="fa fa-remove"></i>
             </span>
-            <p>
-              <strong>Hey! </strong>
-            </p>
-            <p>
-              <strong>New recording posted </strong>
-            </p>
+            <p><strong>Hey! </strong></p>
+            <p><strong>New recording posted </strong></p>
             <p></p>
           </div>
+
           <!-- End Left Column -->
         </div>
+
         <!-- Middle Column -->
         <div class="w3-col m7">
           <div class="w3-row-padding">
@@ -316,8 +406,10 @@
               <div class="w3-card w3-round w3-white"></div>
             </div>
           </div>
+
           <div class="w3-container w3-card w3-white w3-round w3-margin">
             <br />
+
             <span class="w3-right w3-opacity">1 min</span>
             <form
               method="post"
@@ -326,40 +418,39 @@
             >
               <h2>Assignments</h2>
               <br />
+
               <div class="w3-bar-block">
                 <a
                   href="https://us02web.zoom.us/j/85389892082"
                   class="w3-bar-item w3-button w3-padding w3"
+                  ><i class="fa fa-users fa-fw"></i> Lecture Recordings</a
                 >
-                  <i class="fa fa-users fa-fw"></i> Lecture Recordings
-                </a>
-                <a href="#" class="w3-bar-item w3-button w3-padding">
-                  <i class="fa fa-eye fa-fw"></i>  Homework 1
-                </a>
-                <a href="#" class="w3-bar-item w3-button w3-padding">
-                  <i class="fa fa-users fa-fw"></i>  Homework 2
-                </a>
-                <a href="#" class="w3-bar-item w3-button w3-padding">
-                  <i class="fa fa-bullseye fa-fw"></i>  Homework 3
-                </a>
-                <a href="#" class="w3-bar-item w3-button w3-padding">
-                  <i class="fa fa-diamond fa-fw"></i>  Homework 4
-                </a>
-                <a href="#" class="w3-bar-item w3-button w3-padding">
-                  <i class="fa fa-bell fa-fw"></i>  Homework 5
-                </a>
-                <a href="#" class="w3-bar-item w3-button w3-padding">
-                  <i class="fa fa-bank fa-fw"></i> Quiz
-                </a>
-                <a href="#" class="w3-bar-item w3-button w3-padding">
-                  <i class="fa fa-history fa-fw"></i>  Exam 1
-                </a>
-                <a href="#" class="w3-bar-item w3-button w3-padding">
-                  <i class="fa fa-cog fa-fw"></i>  Homework 6
-                </a>
-                <br />
-                <br />
+                <a href="assign.html" class="w3-bar-item w3-button w3-padding"
+                  ><i class="fa fa-eye fa-fw"></i>  Homework 1</a
+                >
+                <a href="assign.html" class="w3-bar-item w3-button w3-padding"
+                  ><i class="fa fa-users fa-fw"></i>  Homework 2</a
+                >
+                <a href="#" class="w3-bar-item w3-button w3-padding"
+                  ><i class="fa fa-bullseye fa-fw"></i>  Homework 3</a
+                >
+                <a href="#" class="w3-bar-item w3-button w3-padding"
+                  ><i class="fa fa-diamond fa-fw"></i>  Homework 4</a
+                >
+                <a href="#" class="w3-bar-item w3-button w3-padding"
+                  ><i class="fa fa-bell fa-fw"></i>  Homework 5</a
+                >
+                <a href="#" class="w3-bar-item w3-button w3-padding"
+                  ><i class="fa fa-bank fa-fw"></i> Quiz</a
+                >
+                <a href="#" class="w3-bar-item w3-button w3-padding"
+                  ><i class="fa fa-history fa-fw"></i>  Exam 1</a
+                >
+                <a href="#" class="w3-bar-item w3-button w3-padding"
+                  ><i class="fa fa-cog fa-fw"></i>  Homework 6</a
+                ><br /><br />
               </div>
+
               <div class="w3-row-padding" style="margin: 0 -16px"></div>
             </form>
           </div>
@@ -401,8 +492,10 @@
               <i class="fa fa-comment"></i>  Comment
             </button>
           </div>
+
           <div class="w3-container w3-card w3-white w3-round w3-margin">
             <br />
+
             <span class="w3-right w3-opacity">32 min</span>
             <h4>Streams</h4>
             <br />
@@ -445,6 +538,7 @@
           </div>
           <div class="w3-container w3-card w3-white w3-round w3-margin">
             <br />
+
             <span class="w3-right w3-opacity">32 min</span>
             <h4>Streams</h4>
             <br />
@@ -487,6 +581,7 @@
           </div>
           <div class="w3-container w3-card w3-white w3-round w3-margin">
             <br />
+
             <span class="w3-right w3-opacity">32 min</span>
             <h4>Streams</h4>
             <br />
@@ -539,24 +634,18 @@
                   <table>
                     <tr>
                       <td></td>
+                      <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
+
                       <td>
-                        <i class="fa fa-user w3-text-blue w3-large"></i>
-                      </td>
-                      <td>
-                        <i>
-                          <b>80</b>
-                        </i>
+                        <i><b>80</b></i>
                       </td>
                     </tr>
                     <tr>
                       <td></td>
+                      <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
+
                       <td>
-                        <i class="fa fa-bell w3-text-red w3-large"></i>
-                      </td>
-                      <td>
-                        <i>
-                          <b>72</b>
-                        </i>
+                        <i><b>72</b></i>
                       </td>
                     </tr>
                     <tr>
@@ -564,10 +653,9 @@
                       <td>
                         <i class="fa fa-users w3-text-yellow w3-large"></i>
                       </td>
+
                       <td>
-                        <i>
-                          <b>72</b>
-                        </i>
+                        <i><b>72</b></i>
                       </td>
                     </tr>
                   </table>
@@ -577,6 +665,7 @@
             </div>
           </div>
           <br />
+
           <div class="w3-card w3-round w3-white w3-center">
             <div class="w3-container">
               <div class="w3-row w3-opacity">
@@ -596,9 +685,8 @@
                         data-analytics="hdr|Logo"
                         onclick="FDX.DTM.pushLinkInfo(this)"
                         aria-label="FedEx Logo"
-                      >
-                        <i class="fa fa-check"></i>
-                      </a>
+                        ><i class="fa fa-check"></i
+                      ></a>
                     </label>
                   </form>
                 </div>
@@ -608,7 +696,9 @@
         </div>
       </div>
       <br />
+
       <br />
+
       <br />
     </div>
     <!-- End Page Container -->

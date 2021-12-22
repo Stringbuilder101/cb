@@ -1,78 +1,19 @@
+# website
 
-# [CS 355 Chalkboard](https://68dd-96-250-179-190.ngrok.io/index.html)
-The link to a whole repository with dependencies in place. reguires only nodemon download, ejs download, node and express.
-https://drive.google.com/drive/folders/1g0p5CA9cSiB-WChFEac_P4cuY-W1H31h?usp=sharing
-
+# website
    One very important aspect is that to run the program the server needs to be connected and the port might be in use for running is better to use port 2020.
-   One additional thing is needed to be downloaded is npm install ejs. User, Instructor, or Admin can log in but can not access each other's pages. Sign Out button implemented      to sign out which takes the user to a homepage. Admin Dashboard shows sample queries of students or instructors for courses and dates, courses, and instructors and students      available. The database is very small and has only a few students or instructors for demonstration. Color lines students or instructors enrolled shows actual percentage for            students, instructors, or courses actually enrolled or available. If not running because of the error : ADDR IN USE please change the port manually
+   One additional thing is needed to be downloaded is npm install ejs. User, Instructor, or Admin can log in but can not access each other's pages. Sign Out button implemented      to sign out which takes the user to a homepage. Admin Dashboard shows sample queries of students or instructors for courses and dates, courses, and instructors and students      available. The database is very small only a few instudents or instructors for demonstration. Color lines students or instructors enrolled shows actual percentage for            students, instructors, or courses actually enrolled or available. If not running because of the error : ADDR IN USE please change the port manually
    ![Screenshot (892)](https://user-images.githubusercontent.com/90509231/145150882-d99d0ff5-66c0-4961-a4ff-dd038fc0c136.png)
    
-   ![Screenshot (921)](https://user-images.githubusercontent.com/90509231/146027596-80f93470-3a67-4f06-bf82-c1bd53d8e3d3.png)
-   Database stores information about users and courses, 
-   ![Screenshot (923)](https://user-images.githubusercontent.com/90509231/146028383-f64e621c-dab7-4678-815f-b41f045ee77a.png)
-
-   Here are the passwords and to sign up and sign in as instructor password and email should end with 1, admin 2, and student do not have to have any      digits in their email or password and ends with @.
-   User sign up is implemented as users, can sign up as admin, instructor, or student by having email and password that end without a number, with 1 for 
-   instructor, and 2 for admin. Passwords and usernames and types are in database screenshot. Example of making a type of user is
-   annygle@yahoo.com Dano600@@ for student, annygle1@yahoo.com  Dano600@@1 for instructor, and annygle2@yahoo.com Dano600@@@2 for admin. 
-   With sign up page a user can sign up with ther first and last name, email(used as username), password, and in database it is assigned a unique id.
-   ![Screenshot (928)](https://user-images.githubusercontent.com/90509231/146342726-bd340479-8af9-4663-878e-d25ef8e329b5.png)
-Instructor log in
-   ![image](https://user-images.githubusercontent.com/90509231/146032971-0d8e1f16-6208-4850-a88f-079e5ab0b181.png)
-   Admin log in.
-   ![image](https://user-images.githubusercontent.com/90509231/146033008-224d9764-9d71-43a4-a9a2-d7cf7c53e367.png)
-
-   Each sign in has password validation
-   ![image](https://user-images.githubusercontent.com/90509231/146033443-7407887b-e1e0-429c-8c2b-44379bf50662.png)
-   ![image](https://user-images.githubusercontent.com/90509231/146033622-b992eca6-8af2-4271-b43c-c66be8430b5f.png)
-   
-![image](https://user-images.githubusercontent.com/90509231/146033662-3a11fa51-fb52-440f-a5ee-924174c8ef9a.png)
-The validation implemented for each account.
-User session is possible only if the user logged in:
-![image](https://user-images.githubusercontent.com/90509231/146034021-36cde670-8e63-4f80-b2b8-64a2756ee8e6.png)   ![Screenshot (898)](https://user-images.githubusercontent.com/90509231/145153429-bf198a94-2741-4853-bc3e-b02f2e5759aa.png)
-For instance if the user is not logged in and trying to access admin account.
-If the user is trying to access the account of admin of instructor with the username of a student it would not work.
-Admin view:
-![image](https://user-images.githubusercontent.com/90509231/146034739-88ee6f14-d768-4f0e-bbce-5b52b4fc7cde.png)
-![image](https://user-images.githubusercontent.com/90509231/146034792-cc25df54-e364-4372-af90-9bbdcf88e864.png)
-![image](https://user-images.githubusercontent.com/90509231/146034931-bb6b0182-9f6b-4c22-af06-e092332279a1.png)
-![image](https://user-images.githubusercontent.com/90509231/146035207-b8f53581-db32-43db-be65-40b0ec2688e7.png)
-
-When a new user signs up
-![image](https://user-images.githubusercontent.com/90509231/146041583-738163dd-ac76-4857-830c-d2beb1baccc1.png)
-Database updates, unique id adds:
-
-![Screenshot (925)](https://user-images.githubusercontent.com/90509231/146042847-a210fd0d-671b-45a1-9666-61aa2fda36c9.png)
-
-and it shows in admin view:
-![Screenshot (929)](https://user-images.githubusercontent.com/90509231/146348812-6de497bd-03e0-4116-abcc-c68e5b2fb173.png)
-
-
-![image](https://user-images.githubusercontent.com/90509231/146043258-bcc7e0b6-b6c3-4787-8eba-20d4396837e0.png)
-
-The information from the database enrolled  students or instructors available shows in admin view as a percentage:
-![Screenshot (926)](https://user-images.githubusercontent.com/90509231/146055650-1e6cb630-15af-41b5-b40b-5c7b2386fb2e.png)
-![image](https://user-images.githubusercontent.com/90509231/146055956-9f324072-b4d7-4fb9-ba09-0465c1dd029c.png)
-
-Instructrs and students showed in total so additional users from sign up can be seen.
-
-![image](https://user-images.githubusercontent.com/90509231/146056185-1b032c37-c769-44d9-93d4-e75cf5ea9f03.png)
-
-
-![image](https://user-images.githubusercontent.com/90509231/146034861-22fa4e8a-4de7-456d-8c1c-c4e8e7afae51.png)
-
-
-Username updates with the administrator who uses the database.
+   ![Screenshot (895)](https://user-images.githubusercontent.com/90509231/145152409-aba297f8-eec0-4c79-ad0d-08a0febc6a01.png)
+   Here are the passwords and to sign up and sign in as instructor password and email should end with 1, admin 2, and student do not have to have any digits in their email or      password.
+   http://localhost:2020/admlogin.html
+   ![Screenshot (898)](https://user-images.githubusercontent.com/90509231/145153429-bf198a94-2741-4853-bc3e-b02f2e5759aa.png)
+    Username updates with the administrator who uses the database.
     ![Screenshot (900)](https://user-images.githubusercontent.com/90509231/145154096-11987f41-0edd-44c5-b120-7405a2fa7a51.png)
     Instructors, Students and Search queries.
     Instructors, students, and admin can log in to the other person account because they have a requrement when signing up to have password end with 2 for admin and 1 for
     instructor.
-    
-   In the dashbaord students and instructors(total) updates when a new user signs up as well as the enrolled statistics:
-   ![image](https://user-images.githubusercontent.com/90509231/146341994-9243ea1c-3ff4-4223-9372-58ee137052c5.png)
-![image](https://user-images.githubusercontent.com/90509231/146342037-f3592abf-2b74-4ea7-81ec-e29385f60297.png)
-![image](https://user-images.githubusercontent.com/90509231/146342071-9ed2e0fa-32d3-4aa2-b674-c29b12a96f19.png)
-
     Incorrect credentials just bring the user back to the index page. No special message or any suggestions.
    Database was created for deliverable 3 and called myapp. It has the following tables:
    ![Screenshot (749)](https://user-images.githubusercontent.com/90509231/144548064-dc90d470-86c6-4b51-bae6-196f660ba4c8.png)
@@ -128,8 +69,8 @@ Username updates with the administrator who uses the database.
    A more visual representation and functionality of the web-site and additionally added to the following repository: 
    https://codepen.io/polinazclements/pens/public?cursor=ZD0wJm89MSZwPTEmdj01Njc0NDI0Ng==
 4. HTML, CSS, JS
-5. Express and Node JS
-6. MySQL
+5. .PHP
+6. Mongo DB 
 7. https://github.com/Stringbuilder101/chalkboard/blob/main/README.md https://stringbuilder101.github.io/chalkboard/    
 8. All pages are connected but not accessible because of the password.
 9. https://codepen.io/polinazclements/pens/public?grid_type=list List of all pages
