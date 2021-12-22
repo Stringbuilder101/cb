@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChalkBoard</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-blue-grey.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    link rel="stylesheet" href="css/subm.css"
+    <script src="js/hpscript.js"></script>
+  </head>
+  <body class="w3-theme-l5">
+    <!--W3 schools code and styling used throughout the project-->
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+        <a
+          class="
+            w3-bar-item
+            w3-button
+            w3-hide-medium
+            w3-hide-large
+            w3-right
+            w3-padding-large
+            w3-hover-white
+            w3-large
+            w3-theme-d2
+          "
+          href="javascript:void(0);"
+          onclick="openNav()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button w3-padding-large w3-theme-d4"
+        >
+          <i class="fa fa-home w3-margin-right"></i>Logo
+        </a>
+        <a
+          href="admlogin.html"
+          class="
+            w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white
+          "
+          title="Admin"
+        >
+          <i class="fa fa-globe"></i>
+        </a>
+        <a
+          href="instrlogin.html"
+          class="
+            w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white
+          "
+          title="Instructor"
+        >
+          <i class="fa fa-user"></i>
+        </a>
+        <div class="w3-dropdown-hover w3-hide-small"></div>
+        <a
+          href="signup.html"
+          class="
+            w3-bar-item
+            w3-button
+            w3-hide-small
+            w3-right
+            w3-padding-large
+            w3-hover-white
+          "
+          title="Sign Up"
+        >
+          <img
+            src="img/blank-profile-picture-973460_960_720.png"
+            class="w3-circle"
+            style="height: 23px; width: 23px"
+            alt="Sign Up"
+          />
+        </a>
+      </div>
+    </div>
+    <!-- Navbar on small screens -->
+    <div
+      id="navDemo"
+      class="
+        w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large
+      "
+    >
+      <a href="admlogin.html" class="w3-bar-item w3-button w3-padding-large"
+        >Admin</a
+      >
+      <a href="admlogin.html" class="w3-bar-item w3-button w3-padding-large"
+        >Admin</a
+      >
+      <a href="instrlogin.html" class="w3-bar-item w3-button w3-padding-large"
+        >Instructor</a
+      >
+      <a href="signup.html" class="w3-bar-item w3-button w3-padding-large"
+        >Create Account</a
+      >
+    </div>
+    <!-- Page Container -->
+    <div
+      class="w3-container w3-content"
+      style="max-width: 1400px; margin-top: 80px"
+    >
+      <!-- The Grid -->
+      <div class="w3-row">
+        <!-- Alert Box -->
+        <div
+          class="
+            w3-container
+            w3-display-container
+            w3-round
+            w3-theme-l4
+            w3-border
+            w3-theme-border
+            w3-margin-bottom
+          "
+        >
+          <ul>
+            <li>
+              <p></p>
+              <h1>Liam Hemsworth:</h1>
+            </li>
+
+            <li>
+              Submitted at
+              <p>10/26/2021 11.59 PM</p>
+            </li>
+            <li>
+              Submission
+              <p><%=result.col1%></p>
+              <p><%=result.col2%></p>
+              <p><%=result.col4%></p>
+            </li>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <li>
+              <form method="post" action="/feedbackinstr" ;>
+                <p></p>
+                <div>
+                  <label for="answer"></label>
+                  <div class="container">
+                    <textarea
+                      id="answer"
+                      name="answer"
+                      placeholder=" Feedback "
+                      rows="3"
+                      cols="50"
+                    ></textarea>
+                    <label for="grade">Grade:</label>
+                    <input type="text" id="grade" name="grade" />
+                    <br />
+                    <br />
+                  </div>
+                </div>
+                <p></p>
+                <p>
+                  <br />
+                  <label class="container">
+                    <input
+                      type="checkbox"
+                      id="saved"
+                      name="saved"
+                      value="yes"
+                    />
+                    <span class="checkmark"></span>Resubmit
+                  </label>
+                  <br />
+                  <br />
+                  <input
+                    type="submit"
+                    class="w3-button w3-theme-d2 w3-margin-bottom"
+                  />
+                </p>
+              </form>
+            </li>
+          </ul>
+          <p></p>
+          <div></div>
+          <!-- End Left Column -->
+        </div>
+      </div>
+      <!-- End Middle Column -->
+    </div>
+    <br />
+    <br />
+    <!-- End Page Container -->
+    <br />
+    <footer class="w3-cont0ainer w3-theme-d3 w3-padding-16">
+      <h5>Footer</h5>
+    </footer>
+    <footer class="w3-container w3-theme-d5">
+      <p>
+        Powered by
+        <a
+          href="https://stringbuilder101.github.io/resume/#lets-keep-in-touch"
+          target="_blank"
+          >@Polina</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

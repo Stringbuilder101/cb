@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChalkBoard</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="js/dashboard.js"></script>
     <script>
       function showTable(){
@@ -181,9 +181,9 @@
             <img class="w3-circle" src="img/blank-profile-picture-973460_960_720.png" alt="avatar" style="width:96px;height:96px">
           </div>
           <div class="w3-col m10 w3-container">
-            <h4><%=result17[i].type_of_user%> <span class="w3-opacity w3-medium"><%=result17[i].date%></span>
+            <h4><%=result17[i].typeuser%> <span class="w3-opacity w3-medium"><%=result17[i].date%></span>
             </h4>
-            <p><%=result17[i].actual_text%></p>
+            <p><%=result17[i].quiery%></p>
             <br>
           </div>
           <%} %>
@@ -201,4 +201,3 @@
     </footer>
   </body>
 </html>
-
