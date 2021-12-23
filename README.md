@@ -104,10 +104,10 @@ Log In for Instructor(different page)
 (Student log in is on the home page)
 Images used from pixabay.com free to use for non comercial purposes with the lisence.
 4. Front End - HTML, CSS, JAVAScript. 
-5. Backend - AJAX, PHP
-6. Mongo DB or SQL
+5. Backend - EJS, first 2 Deliverables planned to use PHP. Variables for JSON object kept exactly the same.
+6. Database - SQL.
 7. https://github.com/Stringbuilder101/chalkboard/blob/main/README.md 
-The differeneces arised from a more closely following project requrents. 
+The differeneces arised from a more closely following project requirements. 
 
 
 
